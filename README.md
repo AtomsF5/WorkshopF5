@@ -5,7 +5,6 @@
 
 
 - Install repository:
-
 ```
 git clone https://github.com/AtomsF5/WorkshopF5.git
 ```
@@ -14,9 +13,7 @@ git clone https://github.com/AtomsF5/WorkshopF5.git
 Create archive to the project  .env
 ```
 
-
 - Install composer:
-
 ```
 composer install
 ```
@@ -25,23 +22,17 @@ composer install
 php artisan key:generate
 ```
 
-
-- Instalamos dependencias d1e nodejs con el siguiente comando:
-
+- Install nodejs:
 ```
-$ npm install
+npm install
 ```
-
 
 - Run npm:
-
 ```
-$ npm run dev
+npm run dev
 ```
-
 
 - Run project:
-
 ```
 $ php artisan serve
 ```

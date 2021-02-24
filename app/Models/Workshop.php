@@ -18,5 +18,5 @@ class Workshop extends Model
         'image',
         'platform_web'
     ];
-
+    
 }

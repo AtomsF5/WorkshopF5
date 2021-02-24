@@ -31433,6 +31433,55 @@ select {
           animation: bounce 1s infinite;
 }
 
+#carrusel {
+  float:center;
+  width:600px;
+  overflow:hidden;
+  height:203px;
+  position:relative;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#carrusel .left-arrow {
+  position:absolute;
+  left: 20px;
+  z-index:1;
+  top:50%;
+  margin-top:-9px;
+}
+
+#carrusel .right-arrow {
+  position:absolute;
+  right:10px;
+  z-index:1;
+  top:50%;
+  margin-top:-9px;
+}
+
+.carrusel {
+  width:4000px;
+  left:0px;
+  position:absolute;
+  z-index:0;
+}
+
+.carrusel>div {
+  float: left;
+  height: 203px;
+  margin-right: 5px;
+  width: 195px;
+  text-align:center;
+}
+
+.carrusel img {
+  cursor:pointer;
+}
+
+.product {
+  border:#CCCCCC 1px solid;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -184472,4 +184521,5 @@ select {
             animation: bounce 1s infinite;
   }
 }
+
 

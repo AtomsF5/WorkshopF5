@@ -24,26 +24,7 @@ class WorkshopController extends Controller
      */
     public function create()
     {
-        Workshop::create([
-            'title',
-            'description',
-            'hour',   
-            'date',            
-            'technical_requirement',
-            'image',
-            'platform_web'
-            
-            
-            'title' => $request->title,
-            'picture_path' => $request->picture_path,
-            'short_description' => $request->short_description,
-            'duration' => $request->duration,
-            'description' => $request->description,
-            'event_date' => $request->event_date,
-            'event_capacity' => $request->event_capacity,
-            'outstanding' => $request->outstanding,
-            'hour' => $request->hour
-        ]);
+        //
     }
 
     /**
@@ -54,7 +35,18 @@ class WorkshopController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Workshop::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'hour' => $request->hour,
+            'date' => $request->date,
+            'technical_requirement' => $request->technical_requirement,
+            'image' => $request->image,
+            'platform_web' => $request->platform_web,
+            
+        ]);
+
+        return redirect()->route('dashboard');
     }
 
     /**

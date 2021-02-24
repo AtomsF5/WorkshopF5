@@ -23,12 +23,12 @@ class WorkshopFactory extends Factory
     {
         return [
             'title'=>$this->faker->sentence(4),
-            'description'=>$this->faker->(),
-            'hour'=>$this->faker->(),
-            'date'=>$this->faker->(),
-            'technical_requirement'=>$this->faker->(),
-            'image'=>$this->faker->(),
-            'platform_web'=>$this->faker->(),
+            'description'=>$this->faker->realText($maxNbChars = 50),
+            'hour'=>$this->faker->time($format = 'H:i:s', $max = 'now'),   
+            'date'=>$this->faker->date($format = 'Y-m-d', $max = 'now'),            
+            'technical_requirement'=>$this->faker->sentence(3),
+            'image'=>$this->faker->url(),
+            'platform_web'=>$this->faker->url(),
         ];
     }
 }

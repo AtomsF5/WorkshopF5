@@ -31433,54 +31433,54 @@ select {
           animation: bounce 1s infinite;
 }
 
-#carrusel {
-  float:center;
-  width:600px;
-  overflow:hidden;
-  height:203px;
-  position:relative;
-  margin-top:20px;
-  margin-bottom:20px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height:auto;
+  background-color:#F2F2F2;
+  border-radius: 10px;
 }
 
-#carrusel .left-arrow {
-  position:absolute;
-  left: 20px;
-  z-index:1;
-  top:50%;
-  margin-top:-9px;
+.card {
+  width: 100%;
+  height: auto;
+  margin:20px;
+  padding: 15px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  background-color: white;
 }
 
-#carrusel .right-arrow {
-  position:absolute;
-  right:10px;
-  z-index:1;
-  top:50%;
-  margin-top:-9px;
+.card button {
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  border: none;
+  padding: 12px;
+  color: white;
+  background-color: #ff4701;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.carrusel {
-  width:4000px;
-  left:0px;
-  position:absolute;
-  z-index:0;
+.card button:hover {
+  opacity: 0.5;
 }
 
-.carrusel>div {
-  float: left;
-  height: 203px;
-  margin-right: 5px;
-  width: 195px;
-  text-align:center;
-}
+.picture {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+};
 
-.carrusel img {
-  cursor:pointer;
-}
-
-.product {
-  border:#CCCCCC 1px solid;
-}
+#left-arrow {
+  display: flexbox;
+  vertical-align: middle;
+};
 
 @media (min-width: 640px) {
   .sm\:container {

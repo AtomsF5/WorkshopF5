@@ -23,9 +23,9 @@ class WorkshopFactory extends Factory
     {
         return [
             'title'=>$this->faker->sentence(4),
-            'description'=>$this->faker->realText($maxNbChars = 50),
-            'hour'=>$this->faker->time($format = 'H:i:s', $max = 'now'),   
-            'date'=>$this->faker->date($format = 'Y-m-d', $max = 'now'),            
+            'description'=>$this->faker->paragraph(),
+            'hour'=>$this->faker->time(),   
+            'date'=>$this->faker->date(),            
             'technical_requirement'=>$this->faker->sentence(3),
             'image'=>$this->faker->url(),
             'platform_web'=>$this->faker->url(),

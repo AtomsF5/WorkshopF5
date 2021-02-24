@@ -17,11 +17,11 @@ class CreateWorkshopsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->date('hour');
-            $table->time('date');
+            $table->time('hour');
+            $table->dateTime('date');
             $table->text('technical_requirement');
-            $table->url('image');
-            $table->url('platform_web');
+            $table->text('image');
+            $table->text('platform_web');
             $table->timestamps();
         });
     }

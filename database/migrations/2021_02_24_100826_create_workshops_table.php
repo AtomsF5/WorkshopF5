@@ -15,6 +15,13 @@ class CreateWorkshopsTable extends Migration
     {
         Schema::create('workshops', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('description');
+            $table->date('hour');
+            $table->time('date');
+            $table->text('technical_requirement');
+            $table->url('image');
+            $table->url('platform_web');
             $table->timestamps();
         });
     }

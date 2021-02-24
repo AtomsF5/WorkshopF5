@@ -1,0 +1,34 @@
+<?php
+
+namespace Database\Factories;
+
+use App\Models\Workshop;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class WorkshopFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Workshop::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'title'=>$this->faker->sentence(4),
+            'description'=>$this->faker->(),
+            'hour'=>$this->faker->(),
+            'date'=>$this->faker->(),
+            'technical_requirement'=>$this->faker->(),
+            'image'=>$this->faker->(),
+            'platform_web'=>$this->faker->(),
+        ];
+    }
+}

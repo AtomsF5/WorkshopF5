@@ -22,17 +22,14 @@ class UpdateWorkshopTest extends TestCase
         $user = User::factory()->create(['is_admin'=>true]);
         
         //crear un workshop en la DB
-        //$workshop = Workshop::factory()->create();
+        $workshop = Workshop::factory()->create();
 
-        //hacer una llamada por get a una ruta edit /workshop/id/
-
+        //hacer una llamada por get a una ruta edit /workshop/id/        
         //comprobar esta respusta
-        $response = $this->get('/'); // workshop/1
+        $response = $this->get('/workshop/1');        
 
-        //que de un status 200
-        $response->assertStatus(200);
-
-        //que pueda ver la vista del formulario
+        //que de un status 200 y que pueda ver la vista del formulario
+        $response->assertStatus(200)->assertViewIs('workshopEdit');
 
         //que pueda ver los campos del workshop que  tengo creado en la DB
 

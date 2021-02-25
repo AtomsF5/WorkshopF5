@@ -104,6 +104,8 @@ class WorkshopController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Workshop::destroy($id);
+        
+        return redirect('dashboard');  
     }
 }

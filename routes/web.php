@@ -24,3 +24,10 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
+
+Route::get('/workshopEdit/{id}/edit', [\App\Http\Controllers\WorkshopController::class, 'edit'])->name('???')->middleware('admin');
+
+
+
+
+

@@ -79,17 +79,10 @@ class WorkshopController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Workshop $workshop)
+    public function update(Request $request, $id)
     {
-        $workshop->title = $request->title;
-        
-        $workshop->title = $request->title;
-        $workshop->description = $request->description;
-        $workshop->hour = $request->hour;
-        $workshop->date = $request->date;
-        $workshop->technical_requirement = $request->technical_requirement;
-        $workshop->image = $request->image;
-        $workshop->platform_web = $request->platform_web;
+        $workshop = Workshop::find($id);
+        $workshop->update($request->all());
 
 
         $workshop->save();

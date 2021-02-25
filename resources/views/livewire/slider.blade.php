@@ -1,8 +1,9 @@
-<section class="container">
+<div class="container">
 
     <a href="#" id="left-arrow"><img src="images/Left.png" /></a>
     <a href="#" id="right-arrow"><img src="images/Right.png" /></a>
 
+    
     <div class="card">
         <img class= "picture" src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/work-better-with-coders-1.jpg" alt="Denim Jeans" style="width:100%">
         <h1>TALLER 1</h1>
@@ -31,6 +32,9 @@
         <button>INSCRÍBETE</button>
       </div>
 
-</section>
+    </div>
+
+
+
 
 

@@ -13,5 +13,21 @@
                 </div>
             </div>
         </div>
+        <div>
+
+            <table id="t01">
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Age</th>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+              </table>
+
+        </div>
     </div>
 </x-app-layout>

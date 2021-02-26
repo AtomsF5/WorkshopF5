@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WorkshopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +20,13 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['admin'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::resource('workshops', WorkshopController::class);
+
+Route::get('dashboard/workshop', [\App\Http\Controllers\WorkshopController::class, 'create'])->name('dashboard')->middleware('admin');
+
 
 

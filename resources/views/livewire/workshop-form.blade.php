@@ -1,9 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <title>{{ config('app.name', 'Laravel') }}</title>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
+    </head>
 <div>
     {{-- Stop trying to control. --}}
     <div class="bg-white rounded-lg shadow overflow-hidden max-w-4xl mx-auto p-4 mb-6">
         <form action="">
             <div>
-                <label class="form-label mb-2" for="title">
+                <label class="form-labelmb-2" for="title">
                     Titulo
                 </label>
                 <input class="form-control" id="title" placeholder="Ingrese un Titulo">
@@ -41,21 +59,5 @@
             </div>
         </form>
     </div>
-
-
-
-
-
-09:46
-.form-label{
-    @apply block uppercase text-gray-700 text-xs font-bold;
-}
-.form-control{
-    @apply block w-full bg-gray-200 px-4 py-3 rounded text-gray-700   border border-gray-200;
-}
-.form-control:focus{
-    @apply bg-white outline-none  border-gray-500;
-}
-
 
 </div>

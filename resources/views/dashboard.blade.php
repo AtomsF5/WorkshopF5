@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <button class="block p-3 mx-auto bg-vermilion-500 text-alabaster-500">Create Workshop </button>
+    <a href="{{ route('workshopform') }}" class=" mt-2 block p-3 mx-auto bg-vermilion-500 text-alabaster-500 rounded w-40 text-center">Create Workshop </a>
 
-    
+
 </x-app-layout>

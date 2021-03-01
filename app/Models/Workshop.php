@@ -12,8 +12,8 @@ class Workshop extends Model
     protected $fillable = [
         'title',
         'description',
-        'hour',   
-        'date',            
+        'date',   
+        'hour',            
         'technical_requirement',
         'image',
         'platform_web'

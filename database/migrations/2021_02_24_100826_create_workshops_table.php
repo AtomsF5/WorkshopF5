@@ -17,8 +17,8 @@ class CreateWorkshopsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->time('hour');
             $table->dateTime('date');
+            $table->time('hour');
             $table->text('technical_requirement');
             $table->text('image');
             $table->text('platform_web');

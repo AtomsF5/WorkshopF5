@@ -38,8 +38,8 @@ class WorkshopController extends Controller
         Workshop::create([
             'title' => $request->title,
             'description' => $request->description,
-            'hour' => $request->hour,
             'date' => $request->date,
+            'hour' => $request->hour,
             'technical_requirement' => $request->technical_requirement,
             'image' => $request->image,
             'platform_web' => $request->platform_web,

@@ -24,8 +24,8 @@ class WorkshopFactory extends Factory
         return [
             'title'=>$this->faker->sentence(4),
             'description'=>$this->faker->paragraph(),
+            'date'=>$this->faker->date(),  
             'hour'=>$this->faker->time(),   
-            'date'=>$this->faker->date(),            
             'technical_requirement'=>$this->faker->sentence(3),
             'image'=>$this->faker->url(),
             'platform_web'=>$this->faker->url(),

@@ -8,6 +8,21 @@ module.exports = {
     ],
 
     theme: {
+        colors: {
+            
+                vermilion: {
+                    '50': '#fff6f2', 
+                    '100': '#ffede6', 
+                    '200': '#ffd1c0', 
+                    '300': '#ffb599', 
+                    '400': '#ff7e4d', 
+                    '500': '#FF4701', 
+                    '600': '#e64001', 
+                    '700': '#bf3501', 
+                    '800': '#992b01', 
+                    '900': '#7d2300',
+                },
+            },
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
@@ -22,4 +37,4 @@ module.exports = {
     },
 
     plugins: [require('@tailwindcss/forms')],
-};
+}

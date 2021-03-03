@@ -1,4 +1,4 @@
-<footer id="footer" class="sm:column flex bg-orangeF5 h-30 absolute bottom-0 w-full">
+<footer id="footer" class="sm:column flex bg-vermilion-500 h-30 absolute bottom-0 w-full">
 
     <div class=" flex justify-between container mx-auto items-center h-full">
 

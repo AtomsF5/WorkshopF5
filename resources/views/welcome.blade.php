@@ -12,6 +12,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,12 +22,11 @@
     </head>
     <body>
         <livewire:header />
+
+        <livewire:slider />
+
         <livewire:footer />
-        @yield('content')
 
         @livewireScripts
-
-        <x-header></x-header>
-        <x-footer></x-footer>
     </body>
 </html>

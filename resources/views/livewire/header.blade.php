@@ -8,7 +8,7 @@
                 <img class="flex height:auto;" src="./images/logo-F5.png">
             </div>
 
-            <div class="redes flex">
+            <div class="flex">
                 <img class="h-6 mx-2" src="./images/Facebook.png">
                 <img class="h-6 mx-2" src="./images/Instagram.png">
                 <img class="h-6 mx-2" src="./images/Twitter.png">
@@ -17,8 +17,8 @@
             </div>
 
         </div>
-        <div class="font-bold text-center text-orangeF5">
-            <h1 class="">#ROMPIENDOLOSCÓDIGOS</h1>
+        <div class="font-bold text-center mt-4">
+            <h1 class="text-vermilion-500">#ROMPIENDOLOSCÓDIGOS</h1>
         </div>
     </div>
 </header>

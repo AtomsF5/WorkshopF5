@@ -16,7 +16,7 @@ use App\Http\Livewire\WorkshopForm;
 */
 
 Route::get('/', function () {
-    return view('layout');
+    return view('welcome');
 });
 
 Route::get('/dashboard', function () {

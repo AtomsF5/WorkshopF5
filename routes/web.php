@@ -31,6 +31,3 @@ Route::get('dashboard/workshop', [WorkshopController::class, 'create'])->name('d
 
 Route::get('dashboard/workshop/createworkshop', [WorkshopForm::class, 'render'])->name('workshopform')->middleware('admin');
 
-
-
-

@@ -4,14 +4,9 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
+    {{-- <x-workshopEdit/> --}}
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
-                </div>
-            </div>
-        </div>
-    </div>
+    <a href="{{ route('workshopform') }}" class=" mt-2 block p-3 mx-auto bg-vermilion-500 text-alabaster-500 rounded w-40 text-center">Create Workshop </a>
+
+
 </x-app-layout>

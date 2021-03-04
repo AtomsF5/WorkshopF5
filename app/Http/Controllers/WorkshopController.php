@@ -14,12 +14,8 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        $worksop= Workshop::all() 
-        ->orderBy('date', 'asc')
-        ->get();
-
-
-        return view('dashboard', compact('workshop'));
+        $workshops = Workshop::all();
+        return view('dashboard', compact('workshops'));
     }
 
     /**
@@ -48,7 +44,7 @@ class WorkshopController extends Controller
             'technical_requirement' => $request->technical_requirement,
             'image' => $request->image,
             'platform_web' => $request->platform_web,
-            
+
         ]);
 
         return redirect()->route('dashboard');
@@ -103,7 +99,7 @@ class WorkshopController extends Controller
     public function destroy($id)
     {
         Workshop::destroy($id);
-        
-        return redirect('dashboard');  
+
+        return redirect('dashboard');
     }
 }

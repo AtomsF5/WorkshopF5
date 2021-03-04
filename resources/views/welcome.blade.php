@@ -24,6 +24,8 @@
 
         <livewire:slider />
 
+        <livewire:grupal-slider />
+
         <livewire:footer />
 
 

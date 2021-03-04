@@ -18,7 +18,9 @@ Create archive to the project  .env
 composer install
 ```
 
+crear archivo .env
 ```
+
 php artisan key:generate
 ```
 

@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
 
         @livewireStyles
 
@@ -27,6 +26,11 @@
 
         <livewire:footer />
 
+
+        <livewire:inscription />
+
+
+        <script src="{{ asset('js/app.js') }}"></script>
         @livewireScripts
     </body>
 </html>

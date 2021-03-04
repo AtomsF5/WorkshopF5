@@ -24,14 +24,14 @@
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Fecha de Nacimiento
                         </label>
-                        <input type="date" class="w-full text-black border-vermilion-500 rounded py-3 px-4 mb-3" id="company" placeholder="día/mes/año">
+                        <input type="date" class="w-full text-black bg-white border-vermilion-500 rounded py-3 px-4 mb-3" id="company" placeholder="día/mes/año">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Sexo
                         </label>
-                        <input class="w-full bg-gray-200 text-black border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="">
+                        <input class="w-full bg-white text-black border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
@@ -45,14 +45,14 @@
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Teléfono*
                         </label>
-                        <input class="w-full bg-gray-200 text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Teléfono">
+                        <input class="w-full bg-white text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Teléfono">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Ciudad*
                         </label>
-                        <input class="w-full bg-gray-200 text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Ciudad">
+                        <input class="w-full bg-white text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Ciudad">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">

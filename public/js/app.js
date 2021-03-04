@@ -3795,6 +3795,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
+__webpack_require__(/*! ./inscripction */ "./resources/js/inscripction.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -3825,6 +3827,25 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/inscripction.js":
+/*!**************************************!*\
+  !*** ./resources/js/inscripction.js ***!
+  \**************************************/
+/***/ (() => {
+
+var button = document.querySelector(".modal-button");
+button.addEventListener("click", toggleModal);
+var overlay = document.querySelector(".modal-overlay");
+overlay.addEventListener("click", toggleModal);
+
+function toggleModal() {
+  var modal = document.querySelector(".modal");
+  modal.classList.toggle("opacity-0");
+  modal.classList.toggle("pointer-events-none");
+}
 
 /***/ }),
 

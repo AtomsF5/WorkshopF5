@@ -15,23 +15,30 @@
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
-                            Apellidos*
+                            Apellido*
                         </label>
                         <input class="w-full bg-white text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Apellidos">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
-                            Fecha de Nacimiento
+                            Fecha de Nacimiento*
                         </label>
-                        <input type="date" class="w-full text-black border-vermilion-500 rounded py-3 px-4 mb-3" id="company" placeholder="día/mes/año">
+                        <input type="date" class="w-full text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" placeholder="día/mes/año">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
-                        <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
-                            Sexo
+                        <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="cómo nos has conocido">
+                                Género
                         </label>
-                        <input class="w-full bg-white text-black border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="">
+                        <div>
+                            <select class="w-full bg-white border-vermilion-500 text-vermilion-500 text-xs py-3 px-4 pr-8 mb-3 rounded" id="type text-vermilion-500">
+                                <option>-</option>
+                                <option>Femenino</option>
+                                <option>Masculino</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
@@ -45,7 +52,7 @@
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Teléfono*
                         </label>
-                        <input class="w-full bg-white text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Teléfono">
+                        <input class="w-full bg-white text-black border border-vermilion-500 rounded py-3 px-4 mb-3" maxlength="9" id="phone" type="tel" placeholder="">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
@@ -57,11 +64,10 @@
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="cómo nos has conocido">
-                                Cómo nos has conocido*
+                                Cómo nos has conocido?*
                         </label>
                         <div>
                             <select class="w-full bg-white border-vermilion-500 text-vermilion-500 text-xs py-3 px-4 pr-8 mb-3 rounded" id="type text-vermilion-500">
-                                <option>-</option>
                                 <option>Entidad, fundación o programa social</option>
                                 <option>Redes Sociales</option>
                                 <option>Web de Factoría F5</option>

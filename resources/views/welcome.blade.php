@@ -19,7 +19,7 @@
         @livewireStyles
 
     </head>
-    <body>
+    <body class="flex flex-col h-screen w-screen justify-between">
         <livewire:header />
 
         <livewire:slider />
@@ -27,10 +27,6 @@
         <livewire:grupal-slider />
 
         <livewire:footer />
-
-
-        <livewire:inscription />
-
 
         <script src="{{ asset('js/app.js') }}"></script>
         @livewireScripts

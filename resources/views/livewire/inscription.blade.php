@@ -7,7 +7,7 @@
             <div class="rounded-lg shadow overflow-hidden  mx-auto p-4 bg-concrete-200">
                 <form>
                     <div class="px-3 mb-6 md:mb-0">
-                        <label class="uppercase tracking-wide text- text-vermilion-500 text-xs font-bold mb-2" for="company">
+                        <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Nombre*
                         </label>
                         <input class="w-full text-vermilion-500 bg-white border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Nombre">

@@ -4,10 +4,10 @@
         <div class="modal-overlay absolute w-full h-full bg-concrete-900 opacity-25 top-0 left-0 cursor-pointer">
         </div>
         <div class="absolute shadow-lg flex items-center justify-center ">
-            <div class="bg-white rounded-lg shadow overflow-hidden  mx-auto p-4 bg-concrete-200">
+            <div class="rounded-lg shadow overflow-hidden  mx-auto p-4 bg-concrete-200">
                 <form>
                     <div class="px-3 mb-6 md:mb-0">
-                        <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
+                        <label class="uppercase tracking-wide text- text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Nombre*
                         </label>
                         <input class="w-full text-vermilion-500 bg-white border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Nombre">
@@ -31,7 +31,7 @@
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Sexo
                         </label>
-                        <input class="w-full bg-gray-200 text-black border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="">
+                        <input class="w-full bg-white text-black border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
@@ -45,14 +45,14 @@
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Teléfono*
                         </label>
-                        <input class="w-full bg-gray-200 text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Teléfono">
+                        <input class="w-full bg-white text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Teléfono">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
                             Ciudad*
                         </label>
-                        <input class="w-full bg-gray-200 text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Ciudad">
+                        <input class="w-full bg-white  text-black border border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Ciudad">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">

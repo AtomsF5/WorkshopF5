@@ -14,7 +14,7 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        $worksop= Workshop::all() 
+        $workshop= Workshop::all() 
         ->orderBy('date', 'asc')
         ->get();
 

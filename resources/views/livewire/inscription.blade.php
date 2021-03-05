@@ -29,9 +29,16 @@
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="company">
-                            Sexo
+                            Género
                         </label>
-                        <input class="w-full bg-white text-black border-vermilion-500 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="">
+                        <div>
+                            <select class="w-full bg-white border-vermilion-500 text-vermilion-500 text-xs py-3 px-4 pr-8 mb-3 rounded" id="type text-vermilion-500">
+                                <option>...</option>
+                                <option>Femenino</option>
+                                <option>Masculino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
@@ -57,11 +64,11 @@
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="cómo nos has conocido">
-                                Cómo nos has conocido*
+                            Cómo nos has conocido?*
                         </label>
                         <div>
                             <select class="w-full bg-white border-vermilion-500 text-vermilion-500 text-xs py-3 px-4 pr-8 mb-3 rounded" id="type text-vermilion-500">
-                                <option>-</option>
+                                <option>Cuál?</option>
                                 <option>Entidad, fundación o programa social</option>
                                 <option>Redes Sociales</option>
                                 <option>Web de Factoría F5</option>

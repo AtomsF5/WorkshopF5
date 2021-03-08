@@ -14,8 +14,12 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        $workshops = Workshop::all();
-        return view('dashboard', compact('workshops'));
+        $workshop=Workshop::all() 
+        ->orderBy('date', 'asc')
+        ->get();
+
+
+        return view('dashboard', compact('workshop'));
     }
 
     /**

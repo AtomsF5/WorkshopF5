@@ -33,7 +33,7 @@
                         </label>
                         <div>
                             <select class="w-full bg-white border-vermilion-500 text-vermilion-500 text-xs py-3 px-4 pr-8 mb-3 rounded" id="type text-vermilion-500">
-                                <option>...</option>
+                                <option>Selecciona...</option>
                                 <option>Femenino</option>
                                 <option>Masculino</option>
                                 <option>Otro</option>

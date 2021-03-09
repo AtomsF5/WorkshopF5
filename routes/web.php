@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkshopController;
-use App\Http\Livewire\WorkshopForm;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,5 +21,5 @@ Route::get('/', function () {
 
 require __DIR__.'/auth.php';
 
-Route::resource('/dashboard', WorkshopController::class);
+Route::resource('/dashboard', WorkshopController::class)->middleware('admin');
 

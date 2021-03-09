@@ -14,12 +14,12 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        $workshops=Workshop::orderBy('date', 'asc')
+        $workshops = Workshop::orderBy('date', 'asc')
         ->get();
 
-        
+
         return view('dashboard', compact('workshops'));
-        
+
     }
 
     /**
@@ -29,15 +29,7 @@ class WorkshopController extends Controller
      */
     public function create()
     {
-        [   'title' => $request->title,
-            'description' => $request->description,
-            'date' => $request->date,
-            'hour' => $request->hour,
-            'technical_requirement' => $request->technical_requirement,
-            'image' => $request->image,
-            'platform_web' => $request->platform_web
-    ];
-
+        return view('dashboard.create');
     }
 
     /**

@@ -18,7 +18,7 @@
 
         </div>
         <div class="font-bold text-center mt-4">
-            <h1 class="text-vermilion-500">#ROMPIENDOLOSCÓDIGOS</h1>
+            <h1 class="text-vermilion-500">#ROMPEMOSLOSCÓDIGOS</h1>
         </div>
     </div>
 </header>

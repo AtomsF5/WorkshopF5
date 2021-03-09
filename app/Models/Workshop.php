@@ -13,11 +13,11 @@ class Workshop extends Model
         'title',
         'category',
         'description',
-        'date',   
-        'hour',            
-        'technical_requirement',
+        'date',
+        // 'hour',
+        // 'technical_requirement',
         'image',
         'platform_web'
     ];
-    
+
 }

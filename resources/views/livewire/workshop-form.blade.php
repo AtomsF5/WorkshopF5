@@ -8,48 +8,57 @@
         </div>
         <div class="absolute shadow-lg flex items-center justify-center ">
             <div class="bg-white rounded-lg shadow overflow-hidden  mx-auto p-4">
-                <div class="w-auto md:w-96 lg:w-96 ">
-                    <label class="form-label my-2" for="title">
-                        Titulo
-                    </label>
-                    <input class="form-control" id="title" placeholder="Ingrese un Titulo">
+                <form action="{{ url('/dashboard') }}" method="POST">
+                    @csrf
+                    <div class="w-auto md:w-96 lg:w-96 ">
+                        <label for="title" class="form-label my-2" for="title">
+                            Titulo
+                        </label>
+                        <input class="form-control" name="title" id="title" placeholder="Ingrese un Titulo">
+                    </div>
+                    <div>
+                        <label for="description" class="form-label my-2" for="description">
+                            Descripcion
+                        </label>
+                        <textarea class="form-control" name="description" id="description" placeholder="Ingrese una description"></textarea>
+                    </div>
+                    <div>
+                        <label for="date" class="form-label my-2" for="date">
+                            Fecha
+                        </label>
+                        <input type="dateTime-local" class="form-control" name="date" id="date" placeholder="Ingrese un Titulo">
+                    </div>
+                    <div>
+                        <label for="image" class="form-label my-2" for="date">
+                            URL imagen
+                        </label>
+                        <input type="url" class="form-control" name="image" id="image" placeholder="URL imagen">
+                    </div>
+                    <div>
+                        <label for="platform_web" class="form-label my-2" for="date">
+                            URL Pagina
+                        </label>
+                        <input type="url" class="form-control" name="platform_web" id="url" placeholder="URL Pagina">
+                    </div>
+                    {{-- <div>
+                        <label for="status" class="form-label my-2" for="status">
+                            Estado
+                        </label>
+                        <select name="status" class="form-control" name="status" id="status">
+                            <option>
+                                Activo
+                            </option>
+                            <option>
+                                Desactivado
+                            </option>
+                        </select>
+                    </div> --}}
+                    <div class="flex justify-between">
+                        <button class="bg-red-500 hover:bg-red-700 border-red-700 hover:text-white p-2 my-2 rounded">Cancelar</button>
+                        <input type="submit" value="Aceptar" class="bg-green-500 hover:bg-green-700 border-green-700 hover:text-white p-2 my-2 rounded">
+                    </div>
                 </div>
-                <div>
-                    <label class="form-label my-2" for="image">
-                        Imagen
-                    </label>
-                    <input type="url" class="form-control" id="image" placeholder="Url Imagen">
-                </div>
-                <div>
-                    <label class="form-label my-2" for="description">
-                        Descripcion
-                    </label>
-                    <textarea class="form-control" id="description" placeholder="Ingrese una description"></textarea>
-                </div>
-                <div>
-                    <label class="form-label my-2" for="date">
-                        Fecha
-                    </label>
-                    <input type="date" class="form-control" id="date" placeholder="Ingrese un Titulo">
-                </div>
-                <div>
-                    <label class="form-label my-2" for="status">
-                        Estado
-                    </label>
-                    <select name="status" class="form-control" id="status">
-                        <option>
-                            Activo
-                        </option>
-                        <option>
-                            Desactivado
-                        </option>
-                    </select>
-                </div>
-                <div class="flex justify-between">
-                    <button class="bg-red-500 hover:bg-red-700 border-red-700 hover:text-white p-2 my-2 rounded">Cancelar</button>
-                    <button class="bg-green-500 hover:bg-green-700 border-green-700 hover:text-white p-2 my-2 rounded">Aceptar</button>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>

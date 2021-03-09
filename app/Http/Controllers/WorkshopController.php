@@ -14,7 +14,7 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        $workshops = Workshop::orderBy('date', 'asc')
+        $workshops = Workshop::orderBy('date', 'desc')
         ->get();
 
 
@@ -44,14 +44,17 @@ class WorkshopController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'date' => $request->date,
-            'hour' => $request->hour,
-            'technical_requirement' => $request->technical_requirement,
+            // 'hour' => $request->hour,
+            // 'technical_requirement' => $request->technical_requirement,
             'image' => $request->image,
             'platform_web' => $request->platform_web,
 
         ]);
 
         return redirect()->route('dashboard');
+        // $datosWorkshop = request()->except('_token');
+        // Workshop::insert($datosWorkshop);
+        // return redirect()->route('dashboard');
     }
 
     /**

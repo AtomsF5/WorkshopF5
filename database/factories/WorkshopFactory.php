@@ -23,6 +23,7 @@ class WorkshopFactory extends Factory
     {
         return [
             'title'=>$this->faker->sentence(4),
+            'category'=>$this->faker->sentence(1),
             'description'=>$this->faker->paragraph(),
             'date'=>$this->faker->date(),  
             'hour'=>$this->faker->time(),   

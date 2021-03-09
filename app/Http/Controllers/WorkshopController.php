@@ -42,6 +42,7 @@ class WorkshopController extends Controller
     {
         Workshop::create([
             'title' => $request->title,
+            'category' => $request->tcategory,
             'description' => $request->description,
             'date' => $request->date,
             'hour' => $request->hour,

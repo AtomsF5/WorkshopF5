@@ -1,12 +1,25 @@
-<x-app-layout>
+{{-- <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
         </h2>
-    </x-slot>
+    </x-slot> --}}
 
-    <livewire:workshop-form />
+    {{-- <livewire:workshop-form /> --}}
 
+
+<ul>
+    @foreach ($workshops as $workshop)
+    <li>{{$workshop->title }} <form action="{{ route('dashboard.destroy', $workshop->id) }}" method="POST">
+        @csrf
+        @method('DELETE')
+        <button type="submit" title="borrar">X</button>
+    </form>
+
+    </li> 
+    @endforeach
+    
+</ul>
 
 {{-- <div class="flex flex-col">
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -65,5 +78,5 @@
 </div> --}}
 
 
-</x-app-layout>
+{{-- </x-app-layout> --}}
 

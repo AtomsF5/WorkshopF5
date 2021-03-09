@@ -11,6 +11,7 @@ class Workshop extends Model
 
     protected $fillable = [
         'title',
+        'category (individual->true)',
         'description',
         'date',   
         'hour',            

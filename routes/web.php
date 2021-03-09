@@ -19,11 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['admin'])->name('dashboard');
-
 require __DIR__.'/auth.php';
 
-Route::resource('/workshops', WorkshopController::class);
+Route::resource('/dashboard', WorkshopController::class);
 

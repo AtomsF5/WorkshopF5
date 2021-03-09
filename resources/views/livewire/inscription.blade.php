@@ -10,21 +10,21 @@
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="nombre">
                             Nombre*
                         </label>
-                        <input class="w-full text-vermilion-500 bg-white border border-vermilion-500 rounded py-3 px-4 mb-3" type="text" placeholder="Nombre" required>
+                        <input class="w-full text-vermilion-500 bg-white border border-vermilion-500 rounded py-3 px-4 mb-3 placeholder-vermilion-500" type="text"   placeholder="Nombre" required>
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="apellido">
                             Apellido*
                         </label>
-                        <input class="w-full bg-white text-black border border-vermilion-500 rounded py-3 px-4 mb-3" type="text" placeholder="Apellido" required>
+                        <input class="w-full bg-white text-vermilion-500 border border-vermilion-500 rounded py-3 px-4 mb-3 placeholder-vermilion-500" type="text" placeholder="Apellido" required>
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="fecha de nacimiento">
                             Fecha de Nacimiento*
                         </label>
-                        <input type="date" class="w-full text-black bg-white border-vermilion-500 rounded py-3 px-4 mb-3" placeholder="día/mes/año" required>
+                        <input type="date" class="w-full text-vermilion-500 bg-white border-vermilion-500 rounded py-3 px-4 mb-3 placeholder-vermilion-500" placeholder="día/mes/año" required>
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
@@ -46,22 +46,21 @@
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="email">
                             eMail*
                         </label>
-                        <input class="w-full bg-white text-vermilion border border-vermilion-500 rounded py-3 px-4 mb-3" type="text" placeholder="@" required>
+                        <input class="w-full bg-white text-vermilion-500 border border-vermilion-500 rounded py-3 px-4 mb-3 placeholder-vermilion-500" type="text" placeholder="📧" required>
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="telefono">
                             Teléfono*
                         </label>
-                        <input class="w-full bg-white text-black border border-vermilion-500 rounded py-3 px-4 mb-3" type="tel" id="number" pattern="[0-9]{9}"
-                        placeholder="Teléfono" required>
+                        <input class="w-full bg-white text-vermilion-500 border border-vermilion-500 rounded py-3 px-4 mb-3 placeholder-vermilion-500" type="tel" id="number" placeholder="☎️" required>
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2">
                             Ciudad*
                         </label>
-                        <input class="w-full bg-white text-black border border-vermilion-500 rounded py-3 px-4 mb-3" type="text" placeholder="Ciudad" required>
+                        <input class="w-full bg-white text-vermilion-500 border border-vermilion-500 rounded py-3 px-4 mb-3 placeholder-vermilion-500" type="text" placeholder="Ciudad" required>
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">

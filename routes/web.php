@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkshopController;
 use App\Http\Livewire\WorkshopForm;
+use App\Http\Controllers\ValidationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,4 @@ Route::get('dashboard/workshop', [WorkshopController::class, 'create'])->name('d
 
 Route::get('dashboard/workshop/createworkshop', [WorkshopForm::class, 'render'])->name('workshopform')->middleware('admin');
 
+Route::post('inscription/users/postvalidation', [ValidationController::class,'store']);

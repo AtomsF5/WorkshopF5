@@ -1,10 +1,10 @@
 <div class="w-full">
     <button  class="modal-button transition mt-4 block p-3 mx-auto text-concrete-50 bg-vermilion-500 rounded w-40 text-center"> Inscribirme </button>
     <div class="modal delay-25 opacity-0 pointer-events-none absolute w-full h-full top-0 left-0 flex items-center justify-center">
-        <div class="modal-overlay absolute w-full h-full bg-concrete-900 opacity-25 top-0 left-0 cursor-pointer">
+        <div class="modal-overlay absolute w-full h-full bg-black opacity-25 top-0 left-0  cursor-pointer">
         </div>
         <div class="absolute shadow-lg flex text-left items-center justify-center ">
-            <div class="rounded-lg shadow overflow-hidden  mx-auto p-4 bg-concrete-200">
+            <div class="rounded-lg shadow overflow-hidden  mx-auto p-4 bg-concrete-300">
                 <form>
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="nombre">
@@ -86,10 +86,10 @@
                     </div>
 
                     <button class="block mx-auto px-3 py-3 mt-5 rounded bg-vermilion-500 border-concrete-50 text-concrete-50">
-                            Inscribirme
+                            Inscríbeme!
                     </button>
 
-                    <p class="text-vermilion-500 text-xs text-center">
+                    <p class="text-vermilion-500 py-3 text-xs text-center">
                         Recibiras un email de confirmación.
                     </p>
                 </form>

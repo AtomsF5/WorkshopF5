@@ -11,3 +11,4 @@ class Inscription extends Component
         return view('livewire.inscription');
     }
 }
+

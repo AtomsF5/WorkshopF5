@@ -14,7 +14,10 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        //
+        $datos['workshops'] =Workshop::orderBy('date', 'desc')
+        ->get();
+
+        return view('dashboard.index', $datos);
     }
 
     /**
@@ -24,7 +27,7 @@ class WorkshopController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.create');
     }
 
     /**
@@ -36,6 +39,9 @@ class WorkshopController extends Controller
     public function store(Request $request)
     {
         //
+        $datosWorkshop =request()->except('_token');
+        Workshop::insert($datosWorkshop);
+        return response()->json($datosWorkshop);
     }
 
     /**
@@ -78,8 +84,10 @@ class WorkshopController extends Controller
      * @param  \App\Models\Workshop  $workshop
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Workshop $workshop)
+    public function destroy($id)
     {
         //
+        Workshop::destroy($id);
+        return redirect('dashboard');
     }
 }

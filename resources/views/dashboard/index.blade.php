@@ -38,12 +38,13 @@ talleres
                                 <div class="text-sm text-gray-500">{{$workshop->platform_web}}</div>
                             </td>
                             <td class="px-6 py-4 text-right text-sm font-medium">
-                            <button type="submit" name="Edit" class="px-5 mb-2 bg-indigo-600 hover:bg-indigo-900 text-white rounded">Editar</button>
-                            <form action="{{ route('dashboard.destroy', $workshop->id) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <input type="submit" value="Borrar" class="px-5 bg-red-600 hover:bg-red-900 text-white rounded">
-                            </form>
+                                <a href="{{ url('/dashboard/'.$workshop->id.'/edit')}}" name="Edit" class="px-5 mb-2 bg-indigo-600 hover:bg-indigo-900 text-white rounded">Editar</a>
+                                
+                                <form action="{{ route('dashboard.destroy', $workshop->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input type="submit" value="Borrar" class="px-5 bg-red-600 hover:bg-red-900 text-white rounded">
+                                </form>
                             </td>
                         </tr>
                         @endforeach

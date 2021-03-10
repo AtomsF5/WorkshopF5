@@ -17,6 +17,7 @@ class CreateWorkshopsTable extends Migration
 
             $table->increments('id');
             $table->string('title');
+            $table->string('category');
             $table->text('description');
             $table->dateTime('date');
             // $table->time('hour');

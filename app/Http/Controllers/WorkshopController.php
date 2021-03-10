@@ -39,7 +39,7 @@ class WorkshopController extends Controller
     public function store(Request $request)
     {
         //
-        $datosWorkshop =request()->except('_token');
+        $datosWorkshop = request()->except('_token');
         Workshop::insert($datosWorkshop);
         return response()->json($datosWorkshop);
     }
@@ -61,9 +61,12 @@ class WorkshopController extends Controller
      * @param  \App\Models\Workshop  $workshop
      * @return \Illuminate\Http\Response
      */
-    public function edit(Workshop $workshop)
+    public function edit($id)
     {
         //
+        $workshop  = Workshop::findOrFail($id);
+
+        return view('dashboard.edit', compact('workshop'));
     }
 
     /**

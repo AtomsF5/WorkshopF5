@@ -65,7 +65,6 @@ class WorkshopController extends Controller
     {
         //
         $workshop  = Workshop::findOrFail($id);
-
         return view('dashboard.edit', compact('workshop'));
     }
 
@@ -76,9 +75,14 @@ class WorkshopController extends Controller
      * @param  \App\Models\Workshop  $workshop
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Workshop $workshop)
+    public function update(Request $request, $id)
     {
         //
+        $datosWorkshop = request()->except(['_token', '_method']);
+        Workshop::where('id', '=', $id)->update($datosWorkshop);
+
+        $workshop  = Workshop::findOrFail($id);
+        return view('dashboard.edit', compact('workshop'));
     }
 
     /**

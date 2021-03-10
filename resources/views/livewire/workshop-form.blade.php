@@ -29,7 +29,7 @@
                         <input type="dateTime-local" class="form-control" name="date" id="date" placeholder="Ingrese un Titulo">
                     </div>
                     <div>
-                        <label for="image" class="form-label my-2" for="date">
+                        <label for="image" class="form-label my-2" for="image">
                             URL imagen
                         </label>
                         <input type="url" class="form-control" name="image" id="image" placeholder="URL imagen">

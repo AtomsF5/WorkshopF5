@@ -15,7 +15,7 @@ class Workshop extends Model
         'description',
         'date',
         // 'hour',
-        // 'technical_requirement',
+        'technical_requirement',
         'image',
         'platform_web'
     ];

@@ -35,7 +35,7 @@ talleres
                                 <img class="text-sm text-gray-500" src="{{$workshop->image}}" alt="imagen taller">
                             </td>
                             <td class="px-6 py-4">
-                                <div class="text-sm text-gray-500">{{$workshop->plaform_web}}</div>
+                                <div class="text-sm text-gray-500">{{$workshop->platform_web}}</div>
                             </td>
                             <td class="px-6 py-4 text-right text-sm font-medium">
                             <button type="submit" name="Edit" class="px-5 mb-2 bg-indigo-600 hover:bg-indigo-900 text-white rounded">Editar</button>

@@ -18,9 +18,7 @@
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Título</th>
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Categoría</th>
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fecha</th>
-                            <!-- <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Hora</th> -->
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Requisitos Técnicos</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Imagen</th>
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Link Taller</th>
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estado del taller</th>
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Personas Inscritas</th>
@@ -34,28 +32,25 @@
                                 <div class="text-sm font-medium text-gray-900">{{$workshop->title}}</div>
                                 <div class="text-sm text-gray-500">{{$workshop->description}}</div>
                             </td>
-                            <td class="px-6 py-4">                                
-                                <div class="text-sm text-gray-500">{{$workshop->category}}</div>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">{{$workshop->category}}</span>
                             </td>
                             <td class="px-6 py-4">
                                 <div class="text-sm text-gray-900">Programado a las:</div>
                                 <div class="text-sm text-gray-500">{{$workshop->date}}</div>
                             </td>
-                            <!-- <td class="px-6 py-4">
-                                <div class="text-sm text-gray-900">Previsto para el día:</div>
-                                <div class="text-sm text-gray-500">{{$workshop->hour}}</div>
-                            </td> -->
-                            <td class="px-6 py-4">
-                                <div class="text-sm font-medium text-gray-900">{{$workshop->title}}</div>
+                            <td class="px-6 py-4">                                
                                 <div class="text-sm text-gray-500">{{$workshop->technical_requirement}}</div>
-                            </td>
-                            <td class="px-6 py-4">
-                                <div class="text-sm font-medium text-gray-900">{{$workshop->title}}</div>
-                                <div class="text-sm text-gray-500">{{$workshop->image}}</div>
-                            </td>
-                            <td class="px-6 py-4">
-                                <div class="text-sm font-medium text-gray-900">{{$workshop->title}}</div>
+                            </td>                            
+                            <td class="px-6 py-4">                                
                                 <div class="text-sm text-gray-500">{{$workshop->platform_web}}</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">Aforo de:</div>
+                                <div class="text-sm text-gray-500">Inscritos:</div>
                             </td>
                             <td class="px-6 py-4 text-right text-sm font-medium">
                             <button type="submit" name="Edit" class="px-5 mb-2 bg-indigo-600 hover:bg-indigo-900 text-white rounded">Editar</button>

@@ -46,7 +46,7 @@ class WorkshopController extends Controller
             'description' => $request->description,
             'date' => $request->date,
             // 'hour' => $request->hour,
-            // 'technical_requirement' => $request->technical_requirement,
+            'technical_requirement' => $request->technical_requirement,
             'image' => $request->image,
             'platform_web' => $request->platform_web,
 

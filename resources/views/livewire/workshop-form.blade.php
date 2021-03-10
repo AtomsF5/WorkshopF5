@@ -14,31 +14,37 @@
                         <label for="title" class="form-label my-2" for="title">
                             Titulo
                         </label>
-                        <input class="form-control" name="title" id="title" placeholder="Ingrese un Titulo">
+                        <input class="form-control" name="title" id="title" placeholder="Introduzca un Título">
                     </div>
                     <div>
                         <label for="description" class="form-label my-2" for="description">
                             Descripcion
                         </label>
-                        <textarea class="form-control" name="description" id="description" placeholder="Ingrese una description"></textarea>
+                        <textarea class="form-control" name="description" id="description" placeholder="Introduzca una Descripción"></textarea>
                     </div>
                     <div>
                         <label for="date" class="form-label my-2" for="date">
                             Fecha
                         </label>
-                        <input type="dateTime-local" class="form-control" name="date" id="date" placeholder="Ingrese un Titulo">
+                        <input type="dateTime-local" class="form-control" name="date" id="date" placeholder="Introduzca un Titulo">
+                    </div>
+                    <div>
+                        <label for="technical_requirement" class="form-label my-2" for="technical_requirement">
+                            Requsitos Técnicos
+                        </label>
+                        <input type="text" class="form-control" name="technical_requirement" id="technical_requirement" placeholder="Introduzca Requisitos Técnicos">
                     </div>
                     <div>
                         <label for="image" class="form-label my-2" for="image">
                             URL imagen
                         </label>
-                        <input type="url" class="form-control" name="image" id="image" placeholder="URL imagen">
+                        <input type="url" class="form-control" name="image" id="image" placeholder="Introduzca URL de la Imagen">
                     </div>
                     <div>
                         <label for="platform_web" class="form-label my-2" for="date">
                             URL Pagina
                         </label>
-                        <input type="url" class="form-control" name="platform_web" id="url" placeholder="URL Pagina">
+                        <input type="url" class="form-control" name="platform_web" id="url" placeholder="Introduzca URL de la Página">
                     </div>
                     {{-- <div>
                         <label for="status" class="form-label my-2" for="status">

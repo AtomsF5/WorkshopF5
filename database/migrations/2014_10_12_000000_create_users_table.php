@@ -22,6 +22,14 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->string('lastname');
+            $table->date('date_born');
+            $table->string('sex')->nullable();
+            $table->string('email');
+            $table->number('phone');
+            $table->string('city');
+            $table->string('how_did_we_meet');
         });
     }
 

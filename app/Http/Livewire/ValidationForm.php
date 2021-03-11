@@ -17,7 +17,7 @@ class WorkshopForm extends Component
         'email' => 'required|email:filter|unique:inscription,email',
         'telefono' => 'required|telefono:filter',
         'ciudad' => 'required|ciudad:filter',
-        'como_nos_has_conocido' => 'required|como_nos_has_conocido',
+        'como_nos_has_conocido' => 'required|como_nos_has_conocido:filter',
 
     ];
 

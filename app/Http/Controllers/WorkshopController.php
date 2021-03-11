@@ -39,9 +39,20 @@ class WorkshopController extends Controller
     public function store(Request $request)
     {
         //
-        $datosWorkshop = request()->except('_token');
-        Workshop::insert($datosWorkshop);
-        return response()->json($datosWorkshop);
+        Workshop::create([
+            'title' => $request->title,
+            'category' => $request->category,
+            'description' => $request->description,
+            'date' => $request->date,
+            // 'hour' => $request->hour,
+            // 'technical_requirement' => $request->technical_requirement,
+            'image' => $request->image,
+            'platform_web' => $request->platform_web,
+
+        ]);
+
+        return redirect()->route('dashboard.index')
+            ->with('success', 'Product created successfully.');
     }
 
     /**
@@ -82,7 +93,8 @@ class WorkshopController extends Controller
         Workshop::where('id', '=', $id)->update($datosWorkshop);
 
         $workshop  = Workshop::findOrFail($id);
-        return view('dashboard.edit', compact('workshop'));
+        return redirect()->route('dashboard.index')
+            ->with('success', 'Product updated successfully');
     }
 
     /**

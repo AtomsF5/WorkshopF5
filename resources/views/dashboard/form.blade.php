@@ -15,13 +15,14 @@
                         <label for="description" class="form-label my-2" for="description">
                             Descripcion
                         </label>
-                        <textarea class="form-control" value="{{$workshop->description}}" name="description" id="description" placeholder="Ingrese una Description"></textarea>
+                        <textarea class="form-control"  name="description" id="description" placeholder="Ingrese una Description">{{$workshop->description}}</textarea>
                     </div>
                     <div>
                         <label for="date" class="form-label my-2" for="date">
-                            Fecha
+                            Fecha:
+                            {{$workshop->date}}
                         </label>
-                        <input type="dateTime-local" value="{{$workshop->date}}" class="form-control"  name="date" id="date" placeholder="Ingrese un fecha">
+                        <input type="dateTime-local" class="form-control"  name="date" id="date" placeholder="Ingrese un fecha">
                     </div>
                     <div>
                         <label for="image" class="form-label my-2" for="image">

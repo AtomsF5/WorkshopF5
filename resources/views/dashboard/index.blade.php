@@ -1,5 +1,18 @@
-mostrar la lista de
-talleres
+@include('layout.header')
+    <div>
+        @if (Route::has('login'))
+        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+            @auth
+            <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+            @else
+            <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
+
+            @if (Route::has('register'))
+            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+            @endif
+            @endauth
+        </div>
+        @endif
 
 <div class="flex flex-col">
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -20,7 +33,7 @@ talleres
                         @foreach ($workshops as $workshop)
                         <tr>
                             <td class="px-6 py-4">
-                                <div class="text-sm font-medium text-gray-900">{{$workshop->title}}</div>
+                                <div class="text-sm font-medium text-gray-500">{{$workshop->title}}</div>
                             </td>
                             <td class="px-6 py-4">
                                 <div class="text-sm text-gray-500">{{$workshop->category}}</div>
@@ -39,7 +52,7 @@ talleres
                             </td>
                             <td class="px-6 py-4 text-right text-sm font-medium">
                                 <a href="{{ url('/dashboard/'.$workshop->id.'/edit')}}" name="Edit" class="px-5 mb-2 bg-indigo-600 hover:bg-indigo-900 text-white rounded">Editar</a>
-                                
+
                                 <form action="{{ route('dashboard.destroy', $workshop->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
@@ -54,3 +67,4 @@ talleres
         </div>
     </div>
 </div>
+@include('layout.footer')

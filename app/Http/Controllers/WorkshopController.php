@@ -86,15 +86,15 @@ class WorkshopController extends Controller
      * @param  \App\Models\Workshop  $workshop
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($id)
     {
         //
         $datosWorkshop = request()->except(['_token', '_method']);
         Workshop::where('id', '=', $id)->update($datosWorkshop);
 
         $workshop  = Workshop::findOrFail($id);
-        return redirect()->route('dashboard.index')
-            ->with('success', 'Product updated successfully');
+        return redirect()->route('dashboard.index');
+
     }
 
     /**

@@ -15,18 +15,20 @@
         <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
 
         @livewireStyles
 
     </head>
-    <body>
+    <body class="flex flex-col h-screen w-screen justify-between">
         <livewire:header />
 
         <livewire:slider />
 
+        <livewire:grupal-slider />
+
         <livewire:footer />
 
+        <script src="{{ asset('js/app.js') }}"></script>
         @livewireScripts
     </body>
 </html>

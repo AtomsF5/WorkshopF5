@@ -3795,7 +3795,11 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
+<<<<<<< HEAD
 __webpack_require__(/*! ./modal_create_workshop.js */ "./resources/js/modal_create_workshop.js");
+=======
+__webpack_require__(/*! ./inscripction */ "./resources/js/inscripction.js");
+>>>>>>> development
 
 /***/ }),
 
@@ -3830,10 +3834,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/modal_create_workshop.js":
 /*!***********************************************!*\
   !*** ./resources/js/modal_create_workshop.js ***!
   \***********************************************/
+=======
+/***/ "./resources/js/inscripction.js":
+/*!**************************************!*\
+  !*** ./resources/js/inscripction.js ***!
+  \**************************************/
+>>>>>>> development
 /***/ (() => {
 
 var button = document.querySelector(".modal-button");

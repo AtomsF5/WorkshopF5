@@ -29,7 +29,7 @@ class WorkshopController extends Controller
      */
     public function create()
     {
-        return view('dashboard.create');
+        return view('dashboard');
     }
 
     /**
@@ -78,7 +78,7 @@ class WorkshopController extends Controller
     public function edit($id)
     {
         $workshop = Workshop::find($id);
-        return view('workshopEdit', compact('workshop'));
+        return view('dashboard', compact('workshop'));
     }
 
     /**

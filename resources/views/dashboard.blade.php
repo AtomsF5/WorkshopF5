@@ -52,9 +52,9 @@
                                 <div class="text-sm text-gray-900">Aforo de:</div>
                                 <div class="text-sm text-gray-500">Inscritos:</div>
                             </td>
-                            <td class="px-6 py-4 text-right text-sm font-medium">
+                            <td class="px-6 py-4 text-right text-sm font-medium">                                
 
-                                <x-btn-edit></x-btn-edit>
+                                <x-btn-edit :workshop="$workshop"/>
 
                                 <form action="{{ route('dashboard.destroy', $workshop->id) }}" method="POST">
                                     @csrf

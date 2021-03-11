@@ -12,7 +12,7 @@
                     @csrf
                     <div class="w-auto md:w-96 lg:w-96 ">
                         <label for="title" class="form-label my-2">
-                            Titulo
+                            Título
                         </label>
                         <input class="form-control" name="title" id="title" placeholder="Introduzca un Título">
                     </div>

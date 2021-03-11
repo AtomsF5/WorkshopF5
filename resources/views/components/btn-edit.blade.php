@@ -1,11 +1,9 @@
 
 <div class="w-full">
     <div class="flex items-center justify-center">
-        <form action="{{ route('dashboard.edit', $workshop->id) }}" method="POST">
-            @csrf
-            @method('PATCH')
-            <button  type="submit" name="Edit" class="modal-button transition px-5 mb-2 bg-indigo-600 hover:bg-indigo-900 text-white rounded"> Editar Taller </button>
-        </form>
+        
+            <button type="button" name="Edit" class="modal-button transition px-5 mb-2 bg-indigo-600 hover:bg-indigo-900 text-white rounded">Editar</button>
+        
     </div>
     <div class="modal delay-25 opacity-0 pointer-events-none absolute w-full h-full top-0 left-0 flex items-center justify-center">
         <div class="modal-overlay absolute w-full h-full bg-black opacity-25 top-0 left-0 cursor-pointer">
@@ -16,7 +14,7 @@
                     @csrf
                     <div class="w-auto md:w-96 lg:w-96 ">
                         <label for="title" class="form-label my-2">
-                            Titulo
+                            Título
                         </label>
                         <input class="form-control" name="title" id="title" value="{{$workshop->title}}" placeholder="Introduzca un Título">
                     </div>

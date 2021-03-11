@@ -20,4 +20,9 @@ class Workshop extends Model
         'platform_web'
     ];
 
+    public function students() {
+
+        return $this->belongsToMany(Student::class);
+    }
+
 }

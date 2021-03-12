@@ -1,7 +1,7 @@
 @include('layout.header')
 
-        <x-slider />
-        <x-slider />
 
+        <x-slider :workshops="$workshops"/>
+        
 
 @include('layout.footer')

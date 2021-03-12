@@ -3,9 +3,14 @@
     <div class="modal delay-25 opacity-0 pointer-events-none absolute w-full h-full top-0 left-0 flex items-center justify-center">
         <div class="modal-overlay absolute w-full h-full bg-black opacity-25 top-0 left-0  cursor-pointer">
         </div>
-        <div class="absolute shadow-lg flex text-left items-center justify-center ">
+        <div class="absolute shadow-lg flex text-left items-center justify-center">
+
             <div class="rounded-lg shadow overflow-hidden  mx-auto p-4 bg-alabaster-300">
+
                 <form>
+
+                    <x-application-logo/>
+                    
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="nombre">
                             Nombre*

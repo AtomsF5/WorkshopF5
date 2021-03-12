@@ -18,13 +18,10 @@ class Workshop extends Model
         'image',
         'platform_web'
     ];
-<<<<<<< HEAD
 
     public function students() {
 
         return $this->belongsToMany(Student::class);
     }
 
-=======
->>>>>>> crud-workshop
 }

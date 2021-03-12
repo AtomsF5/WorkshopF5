@@ -1,32 +1,19 @@
     <div class="containerSlider">
+
             {{-- <a href="#" id="left-arrow"><img src="images/Left.png" /></a>
             <a href="#" id="right-arrow"><img src="images/Right.png" /></a> --}}
-        <div class="card">
-            <img class= "picture" src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/work-better-with-coders-1.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>TALLER 1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dignissimos iste ex quasi quisquam et non porro hic ipsam tempora? Maiores vel impedit sint eum illo adipisci quod quas? Sequi?</p>
 
-        </div>
+    @foreach ($workshops as $workshop)
 
         <div class="card">
-            <img class= "picture" src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/work-better-with-coders-1.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>TALLER 2</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dignissimos iste ex quasi quisquam et non porro hic ipsam tempora? Maiores vel impedit sint eum illo adipisci quod quas? Sequi?</p>
+            <img class= "picture" src= {{$workshop->image}} alt= "imagen del taller" style="width:100%">
+            <h1>{{$workshop->title}}</h1>
+            <p>{{$workshop->description}}</p>
+            <p>Requerimientos Técnicos: {{$workshop->technical_requirement}}</p>
+            <p>Fecha y Hora: {{$workshop->date}}</p>
+            <p>Tipo de taller: {{$workshop->category}}</p>
 
         </div>
-
-        <div class="card">
-            <img class= "picture" src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/work-better-with-coders-1.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>TALLER 3</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dignissimos iste ex quasi quisquam et non porro hic ipsam tempora? Maiores vel impedit sint eum illo adipisci quod quas? Sequi?</p>
-
-        </div>
-
-        <div class="card">
-            <img class= "picture" src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/work-better-with-coders-1.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>TALLER 4</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dignissimos iste ex quasi quisquam et non porro hic ipsam tempora? Maiores vel impedit sint eum illo adipisci quod quas? Sequi?</p>
-
-        </div>
+    @endforeach   
 
     </div>

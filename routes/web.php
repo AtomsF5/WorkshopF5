@@ -3,6 +3,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkshopController;
+use App\Http\Controllers\WelcomeController;
+
 
 
 /*
@@ -22,3 +24,7 @@ Route::get('/', function () {
 
 
 Route::resource('/dashboard', WorkshopController::class);
+
+Route::resource('/', WelcomeController::class);
+
+

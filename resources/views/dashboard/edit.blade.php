@@ -1,7 +1,9 @@
-formularo de edicion
+@include('layout.header')
 
-<form action="{{ url('/dashboard/'.$workshop->id) }}" method="POST">
-    @csrf
-    @method('PATCH')
-    @include('dashboard.form')
-</form>
+    <form  class="mx-auto w-4/6" action="{{ url('/dashboard/'.$workshop->id) }}" method="post">
+        @csrf
+        @method('put')
+        @include('components.form-edit')
+    </form>
+
+@include('layout.footer')

@@ -1,34 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+@include('layout.header')
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <x-slider />
+        <x-slider />
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
-
-        <!-- Scripts -->
-
-        @livewireStyles
-
-    </head>
-    <body class="flex flex-col h-screen w-screen justify-between">
-        <livewire:header />
-
-        <livewire:slider />
-
-        <livewire:grupal-slider />
-
-        <livewire:footer />
-
-        <script src="{{ asset('js/app.js') }}"></script>
-        @livewireScripts
-    </body>
-</html>
+@include('layout.footer')

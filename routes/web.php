@@ -1,7 +1,10 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkshopController;
+use App\Http\Controllers\WelcomeController;
+
 
 
 /*
@@ -19,7 +22,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-require __DIR__.'/auth.php';
 
-Route::resource('/dashboard', WorkshopController::class)->middleware('admin');
+Route::resource('/dashboard', WorkshopController::class);
+
+Route::resource('/', WelcomeController::class);
+
 

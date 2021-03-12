@@ -14,12 +14,10 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        $workshops = Workshop::orderBy('date', 'desc')
+        $datos['workshops'] =Workshop::orderBy('date', 'desc')
         ->get();
 
-
-        return view('dashboard', compact('workshops'));
-
+        return view('dashboard.index', $datos);
     }
 
     /**
@@ -40,31 +38,29 @@ class WorkshopController extends Controller
      */
     public function store(Request $request)
     {
+        //
         Workshop::create([
             'title' => $request->title,
             'category' => $request->category,
             'description' => $request->description,
             'date' => $request->date,
-            // 'hour' => $request->hour,
             'technical_requirement' => $request->technical_requirement,
             'image' => $request->image,
             'platform_web' => $request->platform_web,
 
         ]);
 
-        return redirect()->route('dashboard');
-        // $datosWorkshop = request()->except('_token');
-        // Workshop::insert($datosWorkshop);
-        // return redirect()->route('dashboard');
+        return redirect()->route('dashboard.index')
+            ->with('success', 'Product created successfully.');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Workshop  $workshop
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Workshop $workshop)
     {
         //
     }
@@ -72,42 +68,44 @@ class WorkshopController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Workshop  $workshop
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $workshop = Workshop::find($id);
-        return view('workshopEdit', compact('workshop'));
+        //
+        $workshop  = Workshop::findOrFail($id);
+        return view('dashboard.edit', compact('workshop'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Workshop  $workshop
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($id)
     {
-        $workshop = Workshop::find($id);
-        $workshop->update($request->all());
+        //
+        $datosWorkshop = request()->except(['_token', '_method']);
+        Workshop::where('id', '=', $id)->update($datosWorkshop);
 
+        $workshop  = Workshop::findOrFail($id);
+        return redirect()->route('dashboard.index');
 
-        $workshop->save();
-        return redirect()->route('dashboard');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Workshop  $workshop
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
+        //
         Workshop::destroy($id);
-
         return redirect('dashboard');
     }
 }

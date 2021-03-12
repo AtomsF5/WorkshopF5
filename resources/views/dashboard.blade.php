@@ -39,10 +39,10 @@
                                 <div class="text-sm text-gray-900">Programado a las:</div>
                                 <div class="text-sm text-gray-500">{{$workshop->date}}</div>
                             </td>
-                            <td class="px-6 py-4">                                
+                            <td class="px-6 py-4">
                                 <div class="text-sm text-gray-500">{{$workshop->technical_requirement}}</div>
-                            </td>                            
-                            <td class="px-6 py-4">                                
+                            </td>
+                            <td class="px-6 py-4">
                                 <div class="text-sm text-gray-500">{{$workshop->platform_web}}</div>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap">
@@ -52,13 +52,15 @@
                                 <div class="text-sm text-gray-900">Aforo de:</div>
                                 <div class="text-sm text-gray-500">Inscritos:</div>
                             </td>
-                            <td class="px-6 py-4 text-right text-sm font-medium">
-                            <button type="submit" name="Edit" class="px-5 mb-2 bg-indigo-600 hover:bg-indigo-900 text-white rounded">Editar</button>
-                            <form action="{{ route('dashboard.destroy', $workshop->id) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" name="Delete" class="px-5 bg-red-600 hover:bg-red-900 text-white rounded">Borrar</button>
-                            </form>
+                            <td class="px-6 py-4 text-right text-sm font-medium">                                
+
+                                <x-btn-edit :workshop="$workshop"/>
+
+                                <form action="{{ route('dashboard.destroy', $workshop->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" name="Delete" class="px-5 bg-red-600 hover:bg-red-900 text-white rounded">Borrar</button>
+                                </form>
                             </td>
                         </tr>
                         @endforeach

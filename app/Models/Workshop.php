@@ -14,15 +14,17 @@ class Workshop extends Model
         'category',
         'description',
         'date',
-        // 'hour',
         'technical_requirement',
         'image',
         'platform_web'
     ];
+<<<<<<< HEAD
 
     public function students() {
 
         return $this->belongsToMany(Student::class);
     }
 
+=======
+>>>>>>> crud-workshop
 }

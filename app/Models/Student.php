@@ -19,4 +19,9 @@ class Student extends Model
         'city',
         'how_did_we_meet'
     ];
+
+    public function workshops() {
+
+        return $this->belongsToMany(Workshop::class);
+    }
 }

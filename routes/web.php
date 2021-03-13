@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WorkshopController;
+use App\Http\Livewire\WorkshopForm;
+use App\Http\Controllers\ValidationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +22,14 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['admin'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::resource('workshops', WorkshopController::class);
+
+Route::get('dashboard/workshop', [WorkshopController::class, 'create'])->name('dashboard')->middleware('admin');
+
+Route::get('dashboard/workshop/createworkshop', [WorkshopForm::class, 'render'])->name('workshopform')->middleware('admin');
+
+Route::post('inscription/users/postvalidation', [ValidationController::class,'store']);

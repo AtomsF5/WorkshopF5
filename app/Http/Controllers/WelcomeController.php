@@ -14,7 +14,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $workshops = Workshop::orderBy('date', 'ASC')->get();
+        $workshops = Workshop::orderBy('date', 'DESC')->get();
         //dd($workshops);
         return view('welcome', compact('workshops'));
     }

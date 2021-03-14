@@ -18,4 +18,10 @@ class Workshop extends Model
         'image',
         'platform_web'
     ];
+
+    public function students() {
+
+        return $this->belongsToMany(Student::class);
+    }
+
 }

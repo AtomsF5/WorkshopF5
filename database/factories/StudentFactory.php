@@ -23,13 +23,13 @@ class StudentFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
-            'lastname' => $this->faker->lastname,
-            'date_born' => $this->faker->date_born,
-            'sex' => $this->faker->sex,
+            'lastname' => $this->faker->lastName,
+            'date_born' => $this->faker->date(),
+            'sex' => $this->faker->sentence(1),
             'email' => $this->faker->email,
-            'phone' => $this->faker->phone,
+            'phone' => $this->faker->phoneNumber,
             'city' => $this->faker->city,
-            'how_did_we_meet' => $this->faker->how_did_we_meet,
+            'how_did_we_meet' => $this->faker->sentence(3),
         ];
     }
 }

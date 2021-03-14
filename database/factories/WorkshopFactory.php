@@ -27,7 +27,7 @@ class WorkshopFactory extends Factory
             'description'=>$this->faker->sentence(10),
             'date'=>$this->faker->date(),
             'technical_requirement'=>$this->faker->sentence(3),
-            'image'=>$this->faker->url(),
+            'image'=>$this->faker->image(),            
             'platform_web'=>$this->faker->url(),
         ];
     }

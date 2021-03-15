@@ -10,7 +10,7 @@
                 <form>
 
                     <x-application-logo/>
-                    
+
                     <div class="px-3 mb-6 md:mb-0">
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="nombre">
                             Nombre*
@@ -51,7 +51,7 @@
                         <label class="uppercase tracking-wide text-vermilion-500 text-xs font-bold mb-2" for="email">
                             eMail*
                         </label>
-                        <input class="w-full bg-white text-vermilion-500 border border-vermilion-500 rounded py-3 px-4 mb-3 placeholder-vermilion-500" type="text" placeholder="📧">
+                        <input class="w-full bg-white text-vermilion-500 border border-vermilion-500 rounded py-3 px-4 mb-3 placeholder-vermilion-500" wire:model="email" placeholder="📧">
                     </div>
 
                     <div class="px-3 mb-6 md:mb-0">

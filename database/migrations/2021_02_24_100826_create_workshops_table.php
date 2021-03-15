@@ -23,6 +23,7 @@ class CreateWorkshopsTable extends Migration
             $table->text('image');
             $table->text('platform_web');
             $table->timestamps();
+            $table->boolean('grupal')->default(false); 
         });
     }
 

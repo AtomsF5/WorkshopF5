@@ -25,7 +25,7 @@
     <body class="antialiased">
         <header class="bg-white">
 
-            <div class="container pt-8 pb-4 mx-auto">
+            <div class="container p-10 mx-auto">
 
                 <div class="flex flex-wrap justify-between overflow-hidden">
 

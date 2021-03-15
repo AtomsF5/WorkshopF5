@@ -1,9 +1,5 @@
 <div class="fixed top-0 flex items-center w-full bg-gray-900 bg-opacity-60">
-    {{-- <div>
-        <x-button class="px-8 py-3 bg-vermilion-500 hover:bg-vermilion-600 focus:outline-none focus:ring-2 focus:ring-vermilion-600 focus:border-transparent">
-            Inscríbeme
-        </x-button>
-    </div> --}}
+
             <div class="flex flex-col w-full h-screen overflow-hidden rounded-lg shadow bg-alabaster-300">
 
                 <x-application-logo/>
@@ -90,9 +86,7 @@
                     </span>
                 </div>
 
-                {{-- <button class="block px-3 py-3 mx-auto mt-5 rounded bg-vermilion-500 border-alabaster-50 text-alabaster-50">
-                    Inscríbeme!
-                </button> --}}
+
                 <div class="text-center">
                     <x-button class="text-center bg-vermilion-500 hover:bg-vermilion-600 focus:outline-none focus:ring-2 focus:ring-vermilion-600 focus:border-transparent">
                         Inscríbeme
@@ -101,16 +95,6 @@
 
             </form>
 
-                {{--
-
-                <p class="py-3 text-xs text-center text-vermilion-500">
-                    {{
-                        $errors->has('form')
-                        ? $errors->first('form')
-                        : 'Recibiras un email de confirmación.'
-                    }}
-
-                </p> --}}
 
 </div>
 

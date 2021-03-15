@@ -2,6 +2,6 @@
 
 
         <x-slider :workshops="$workshops"/>
-        
+
 
 @include('layout.footer')

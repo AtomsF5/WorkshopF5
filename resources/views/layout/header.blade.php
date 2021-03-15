@@ -25,9 +25,9 @@
     <body class="antialiased">
         <header class="bg-white">
 
-            <div class="container mx-auto pt-8 pb-4">
+            <div class="container pt-8 pb-4 mx-auto">
 
-                <div class="flex flex-wrap justify-between overflow-hidden sm:-mx-1 md:-mx-px lg:-mx-2 xl:-mx-2">
+                <div class="flex flex-wrap justify-between overflow-hidden">
 
                     <div class="md:flex md:items-center md:justify-center ">
                         <img class="flex height:auto;" src="./images/logo-F5.png">
@@ -42,7 +42,7 @@
                     </div>
 
                 </div>
-                <div class="font-bold text-center mt-4">
+                <div class="pt-4 font-bold text-center">
                     <h1 class="text-vermilion-500">#ROMPEMOSLOSCÓDIGOS</h1>
                 </div>
             </div>

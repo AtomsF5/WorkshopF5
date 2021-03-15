@@ -1,9 +1,8 @@
 <?php
 
-
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkshopController;
-use App\Http\Controllers\ValidationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,14 +15,10 @@ use App\Http\Controllers\ValidationController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [WelcomeController::class, 'index']);
 
 
 Route::resource('/dashboard', WorkshopController::class);
 
-Route::resource('/', WelcomeController::class);
 
 
-Route::post('inscription/users/postvalidation', [ValidationController::class,'store']);

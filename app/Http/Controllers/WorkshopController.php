@@ -14,10 +14,10 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        $datos['workshops'] =Workshop::orderBy('date', 'desc')
+        $workshops = Workshop::orderBy('date', 'desc')
         ->get();
 
-        return view('dashboard.index', $datos);
+        return view('dasboard.index', $workshops);
     }
 
     /**

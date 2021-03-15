@@ -14,11 +14,11 @@ class CreateWorkshopsTable extends Migration
     public function up()
     {
         Schema::create('workshops', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('title');
+            $table->string('category');
             $table->text('description');
             $table->dateTime('date');
-            $table->time('hour');
             $table->text('technical_requirement');
             $table->text('image');
             $table->text('platform_web');

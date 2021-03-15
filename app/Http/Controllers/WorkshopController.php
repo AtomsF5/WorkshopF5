@@ -91,7 +91,7 @@ class WorkshopController extends Controller
         $datosWorkshop = request()->except(['_token', '_method']);
         Workshop::where('id', '=', $id)->update($datosWorkshop);
 
-        $workshop  = Workshop::findOrFail($id);
+        $workshop = Workshop::findOrFail($id);
         return redirect()->route('dashboard.index');
 
     }
@@ -108,4 +108,23 @@ class WorkshopController extends Controller
         Workshop::destroy($id);
         return redirect('dashboard');
     }
+
+    public function categorize()
+    {  
+        $workshop= Workshop::whereIn('category', ['individual', 'grupal'])
+                ->orderBy('date', 'asc')
+                ->get();
+        return view('welcome', compact('workshop'));
+
+    }
+
+
+    // public function highlight()
+    // {  
+    //     $events= Event::whereIn('category', ['highlight', 'both'])
+    //             ->orderBy('date', 'asc')
+    //             ->get();
+    //     return view('welcome', compact('events'));
+
+    // }
 }

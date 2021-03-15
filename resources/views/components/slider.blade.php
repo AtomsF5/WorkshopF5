@@ -13,7 +13,7 @@
             <p>Fecha y Hora: {{$workshop->date}}</p>
             <p>Tipo de taller: {{$workshop->category}}</p>
             <div class="">
-                <x-button class="static bottom-0">Inscríbeme</x-button>
+                <livewire:inscription />
             </div>
         </div>
     @endforeach

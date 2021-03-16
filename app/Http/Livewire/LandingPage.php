@@ -38,7 +38,18 @@ class LandingPage extends Component
             'city' => $this->city,
             'how_did_you_get_to_know_us' => $this->how_did_you_get_to_know_us,
         ]);
-        \Log::debug($this->how_did_you_get_to_know_us);
+
+        $this->reset([
+            'name',
+            'last_name',
+            'date_born',
+            'gender',
+            'email',
+            'phone',
+            'city',
+            'how_did_you_get_to_know_us'
+        ]);
+
 
     }
 }

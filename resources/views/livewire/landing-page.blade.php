@@ -3,6 +3,7 @@
         class="container"
         x-data="{
             showModal: false,
+            showSuccess: false,
         }"
     >
 
@@ -38,6 +39,7 @@
             x-on:click.self="showModal = false"
             x-on:keydown.escape.window=" showModal = false"
         >
+
 
                 <div class="p-8 m-auto overflow-y-auto rounded-lg shadow h-4/5 bg-alabaster-300 ">
 
@@ -154,11 +156,20 @@
                         </span>
 
 
-                        <div class="text-center">
+                        <div class="mb-2 text-center">
                             <x-button class="text-center bg-vermilion-500 hover:bg-vermilion-600 focus:outline-none focus:ring-2 focus:ring-vermilion-600 focus:border-transparent">
                                 Inscríbeme
                             </x-button>
                         </div>
+
+                        <div class="rounded-xl bg-vermilion-500">
+
+                            <p class="font-extrabold text-center text-white animate-pulse text-9xl">&check;</p>
+                            <p class="mt-16 text-5xl font-extrabold text-center text-white">Estupendo!</p>
+                            <p class="text-2xl text-center text-white ">Nos vemos en el Taller &#128521;</p>
+
+                        </div>
+
 
 
                     </form>

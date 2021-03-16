@@ -21,10 +21,14 @@ use App\Http\Controllers\WelcomeController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+// Route::get('/individualCategory', [WelcomeController::class, 'individuals'])->name('pastevents');
 
 Route::resource('/dashboard', WorkshopController::class);
 
 Route::resource('/', WelcomeController::class);
 
 
+// Rutas proyecto Events
+// Route::get('/', [IndexController::class, 'index'])->name('index');
+// Route::get('/pastevents', [IndexController::class, 'pastEvents'])->name('pastevents');
+// Route::get('/event/{id}', [IndexController::class, 'eventDetail'])->name('eventDetail');

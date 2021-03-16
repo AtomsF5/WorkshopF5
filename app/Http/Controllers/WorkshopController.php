@@ -14,7 +14,7 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        $datos['workshops'] =Workshop::orderBy('date', 'desc')
+        $datos['workshops'] =Workshop::orderBy('date', 'DESC')
         ->get();
 
         return view('dashboard.index', $datos);
@@ -109,22 +109,5 @@ class WorkshopController extends Controller
         return redirect('dashboard');
     }
 
-    public function categorize()
-    {  
-        $workshop= Workshop::whereIn('category', ['individual', 'grupal'])
-                ->orderBy('date', 'asc')
-                ->get();
-        return view('welcome', compact('workshop'));
 
-    }
-
-
-    // public function highlight()
-    // {  
-    //     $events= Event::whereIn('category', ['highlight', 'both'])
-    //             ->orderBy('date', 'asc')
-    //             ->get();
-    //     return view('welcome', compact('events'));
-
-    // }
 }

@@ -20,6 +20,17 @@ class Student extends Model
         'how_did_you_get_to_know_us'
     ];
 
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'email_verified_at' => 'datatime',
+    ];
+
+
+
     public function workshops() {
 
         return $this->belongsToMany(Workshop::class);

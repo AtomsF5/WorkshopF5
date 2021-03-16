@@ -11,13 +11,13 @@ class Student extends Model
 
     protected $fillable = [
         'name',
-        'lastname',
+        'last_name',
         'date_born',
-        'sex',
+        'gender',
         'email',
         'phone',
         'city',
-        'how_did_we_meet'
+        'how_did_you_get_to_know_us'
     ];
 
     public function workshops() {

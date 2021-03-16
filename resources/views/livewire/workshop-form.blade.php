@@ -28,7 +28,7 @@
                     </div>
                     <div>
                         <label for="description" class="form-label my-2" >
-                            Descripcion
+                            Descripción
                         </label>
                         <textarea class="form-control" name="description" id="description" placeholder="Introduzca una Descripción"></textarea>
                     </div>
@@ -52,7 +52,7 @@
                     </div>
                     <div>
                         <label for="platform_web" class="form-label my-2">
-                            URL Pagina
+                            URL Página
                         </label>
                         <input type="url" class="form-control" name="platform_web" id="url" placeholder="Introduzca URL de la Página">
                     </div>

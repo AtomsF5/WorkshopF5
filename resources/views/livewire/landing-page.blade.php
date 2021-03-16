@@ -2,7 +2,6 @@
     <div
         class="container"
         x-data="{
-            {{-- workshops: {{$workshops}} --}}
             showModal: false,
         }"
     >
@@ -44,7 +43,10 @@
 
                     <x-application-logo/>
 
-                    <form class="flex flex-col text-left">
+                    <form
+                        class="flex flex-col text-left"
+                        wire:submit.prevent="inscription"
+                        >
 
                         <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="nombre">
                             Nombre*

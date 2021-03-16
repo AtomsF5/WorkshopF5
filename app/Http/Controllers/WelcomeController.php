@@ -31,12 +31,12 @@ class WelcomeController extends Controller
 
     }
 
-    public function groupeCategory()
+    public function groupCategory()
     {  
-        $groupes= Workshop::where('category', '=', 'Grupal')
+        $groups= Workshop::where('category', '=', 'Grupal')
                 ->orderBy('date', 'DESC')
                 ->get();
-        return view('welcome', compact('workshop'));
+        return view('welcome', compact('workshops'));
 
     }
 

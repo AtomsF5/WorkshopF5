@@ -43,7 +43,11 @@
             >
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="nombre">
-                    Nombre*
+                    {{
+                        $errors->has('name')
+                        ? $errors->first('email')
+                        : 'Nombre*'
+                    }}
                 </span>
                 <input
                     class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500"
@@ -55,7 +59,11 @@
 
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="apellido">
-                    Apellido*
+                    {{
+                        $errors->has('name')
+                        ? $errors->first('email')
+                        : 'Apellido*'
+                    }}
                 </span>
                 <input
                     class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500"
@@ -66,7 +74,11 @@
                 >
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="fecha de nacimiento">
-                    Fecha de Nacimiento*
+                    {{
+                        $errors->has('name')
+                        ? $errors->first('email')
+                        : 'Fecha de Nacimiento*'
+                    }}
                 </span>
                 <input
                     class="w-full px-4 py-3 mb-3 bg-white rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500"
@@ -93,7 +105,11 @@
 
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="email">
-                    eMail*
+                    {{
+                        $errors->has('name')
+                        ? $errors->first('email')
+                        : 'eMail*'
+                    }}
                 </span>
                 <input
                     class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500"
@@ -105,7 +121,11 @@
 
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="telefono">
-                    Teléfono*
+                    {{
+                        $errors->has('name')
+                        ? $errors->first('email')
+                        : 'Teléfono*'
+                    }}
                 </span>
                 <input
                     class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500"
@@ -117,7 +137,11 @@
 
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500">
-                    Ciudad*
+                    {{
+                        $errors->has('name')
+                        ? $errors->first('email')
+                        : 'Ciudad*'
+                    }}
                 </span>
                 <input
                     class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500"
@@ -128,7 +152,11 @@
 
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="cómo nos has conocido">
-                    Cómo nos has conocido?*
+                    {{
+                        $errors->has('name')
+                        ? $errors->first('email')
+                        : 'Cómo nos has conocido?*'
+                    }}
                 </span>
                 <select
                     class="w-full px-4 py-3 pr-8 mb-3 text-sm bg-white rounded border-vermilion-500 text-vermilion-500"
@@ -144,7 +172,12 @@
                 </select>
 
                 <span class="pb-3 text-xs text-vermilion-500">
-                        * Este campo es obligatorio.
+                    {{
+                        $errors->has('name')
+                        ? $errors->first('email')
+                        : '* Este campo es obligatorio.'
+                    }}
+
                 </span>
 
 
@@ -170,3 +203,4 @@
 
     </div>
 </div>
+

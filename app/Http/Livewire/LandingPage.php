@@ -21,8 +21,8 @@ class LandingPage extends Component
     public $how_did_you_get_to_know_us;
 
     protected $rules = [
-        'name' => 'required|max:50',
-        'last_name' => 'required|max:50',
+        'name' => 'required',
+        'last_name' => 'required',
         'date_born' => 'required',
         'gender' => 'required',
         'email' => 'required|email:filter|unique:students,email',

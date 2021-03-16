@@ -1,6 +1,5 @@
-<div>
+<div class="mx-auto">
     <div
-        class="container"
         x-data="{
             showModal: false,
             showSuccess: false,

@@ -44,7 +44,7 @@
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="nombre">
                     {{
                         $errors->has('name')
-                        ? $errors->first('email')
+                        ? $errors->first('name')
                         : 'Nombre*'
                     }}
                 </span>
@@ -59,8 +59,8 @@
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="apellido">
                     {{
-                        $errors->has('name')
-                        ? $errors->first('email')
+                        $errors->has('last_name')
+                        ? $errors->first('last_name')
                         : 'Apellido*'
                     }}
                 </span>
@@ -74,8 +74,8 @@
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="fecha de nacimiento">
                     {{
-                        $errors->has('name')
-                        ? $errors->first('email')
+                        $errors->has('date_born')
+                        ? $errors->first('date_born')
                         : 'Fecha de Nacimiento*'
                     }}
                 </span>
@@ -88,7 +88,11 @@
 
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="genero">
-                    Género
+                    {{
+                        $errors->has('gender')
+                        ? $errors->first('gender')
+                        : 'Género*'
+                    }}
                 </span>
                 <select
                     class="px-4 py-3 mb-3 text-sm bg-white rounded border-vermilion-500 text-vermilion-500"
@@ -105,7 +109,7 @@
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="email">
                     {{
-                        $errors->has('name')
+                        $errors->has('email')
                         ? $errors->first('email')
                         : 'eMail*'
                     }}
@@ -121,8 +125,8 @@
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="telefono">
                     {{
-                        $errors->has('name')
-                        ? $errors->first('email')
+                        $errors->has('phone')
+                        ? $errors->first('phone')
                         : 'Teléfono*'
                     }}
                 </span>
@@ -137,8 +141,8 @@
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500">
                     {{
-                        $errors->has('name')
-                        ? $errors->first('email')
+                        $errors->has('city')
+                        ? $errors->first('city')
                         : 'Ciudad*'
                     }}
                 </span>
@@ -152,9 +156,9 @@
 
                 <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="cómo nos has conocido">
                     {{
-                        $errors->has('name')
-                        ? $errors->first('email')
-                        : 'Cómo nos has conocido?*'
+                        $errors->has('how_did_you_get_to_know_us')
+                        ? $errors->first('how_did_you_get_to_know_us')
+                        : '¿Cómo nos has conocido?*'
                     }}
                 </span>
                 <select

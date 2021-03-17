@@ -27,7 +27,20 @@ class LandingPage extends Component
         'gender' => 'required',
         'email' => 'required|email:filter|unique:students,email',
         'phone' => 'required',
+        'city' => 'required',
         'how_did_you_get_to_know_us' => 'required',
+    ];
+
+    protected $messages = [
+        'name.required'=> 'Campo requerido.',
+        'last_name.required'=> 'Campo requerido.',
+        'date_born.required'=> 'Campo requerido.',
+        'gender.required'=> 'Debes seleccionar una opción.',
+        'email.required'=> 'Campo requerido.',
+        'email.unique'=> 'El correo ya se encuentra registrado.',
+        'phone.required'=> 'Campo requerido.',
+        'city.required'=> 'Campo requerido.',
+        'how_did_you_get_to_know_us.required'=> 'Debes seleccionar una opción.',
     ];
 
 

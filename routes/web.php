@@ -25,4 +25,3 @@ Route::resource('/dashboard', WorkshopController::class);
 
 Route::get('/', [WelcomeController::class, 'index']);
 
-

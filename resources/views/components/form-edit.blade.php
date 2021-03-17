@@ -18,7 +18,7 @@
 
 
         <label for="description" class="my-2 form-label" for="description">
-            Descripción
+            ¿Qué haremos?
         </label>
         <textarea class="form-control"  name="description" id="description" placeholder="Ingrese una Description">{{$workshop->description}}</textarea>
 
@@ -37,7 +37,7 @@
 
 
         <label for="platform_web" class="my-2 form-label" for="date">
-            URL Página
+            Dirección / Enlace de la reunión
         </label>
         <input type="url" class="mb-5 form-control" value="{{$workshop->platform_web}}"  name="platform_web" id="url" placeholder="URL Pagina">
 

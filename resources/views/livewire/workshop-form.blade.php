@@ -32,7 +32,7 @@
             </div>
             <div>
                 <label for="description" class="my-2 form-label" >
-                    Descripción
+                    ¿Qué haremos?
                 </label>
                 <textarea class="form-control" name="description" id="description" placeholder="Introduzca una Descripción"></textarea>
             </div>
@@ -56,7 +56,7 @@
             </div>
             <div>
                 <label for="platform_web" class="my-2 form-label">
-                    URL Página
+                    Dirección / Enlace de la reunión
                 </label>
                 <input type="url" class="form-control" name="platform_web" id="url" placeholder="Introduzca URL de la Página">
             </div>

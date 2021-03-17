@@ -20,13 +20,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', [WelcomeController::class, 'index']);
-// Route::get('/individualCategory', [WelcomeController::class, 'individuals'])->name('pastevents');
-
-
 Route::resource('/dashboard', WorkshopController::class);
 
-// Rutas proyecto Events
-// Route::get('/', [IndexController::class, 'index'])->name('index');
-// Route::get('/pastevents', [IndexController::class, 'pastEvents'])->name('pastevents');
-// Route::get('/event/{id}', [IndexController::class, 'eventDetail'])->name('eventDetail');
+
+Route::get('/', [WelcomeController::class, 'index']);
+
+

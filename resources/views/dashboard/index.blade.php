@@ -29,7 +29,7 @@
                             <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">Requisitos Técnicos</th>
                             <!-- <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">Link Taller</th> -->
                             <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">Estado del taller</th>
-                            <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">Personas Inscritas</th>
+                            <!-- <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">Personas Inscritas</th> -->
                             <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">Acciones</th>
                         </tr>
                     </thead>
@@ -56,10 +56,10 @@
                             <td class="px-6 py-4 whitespace-nowrap">
                             <span class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">Active</span>
                             </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
+                            <!-- <td class="px-6 py-4 whitespace-nowrap">
                                 <div class="text-sm text-gray-900">Aforo de:</div>
                                 <div class="text-sm text-gray-500">Inscritos:</div>
-                            </td>
+                            </td> -->
                             <td class="px-6 py-4 text-sm font-medium text-right">
                                 <a href="{{ url('/dashboard/'.$workshop->id.'/edit')}}" name="Edit" class="px-5 mb-2 text-white bg-indigo-600 rounded hover:bg-indigo-900">Editar</a>
 

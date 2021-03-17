@@ -11,32 +11,23 @@ class WelcomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+
+    // public function index()
+    // {
+
+    //     $workshops = Workshop::orderBy('date', 'DESC')->get();
+    //     // dd($workshops);
+    //     return view('welcome', compact('workshops'));
+    // }
+
+     public function index()
     {
-        
-        $workshops = Workshop::orderBy('date', 'DESC')->get();
-        // dd($workshops);
-        return view('welcome', compact('workshops'));
-    }
 
-
-    public function individualCategory()
-    {  
-        $individuals= Workshop::where('category', '=', 'Individual')
-                ->orderBy('date', 'DESC')
-                ->get();
-                // dd($individuals);
-        return view('welcome', compact('workshops'));
-
-    }
-
-    public function groupCategory()
-    {  
-        $groups= Workshop::where('category', '=', 'Grupal')
-                ->orderBy('date', 'DESC')
-                ->get();
-        return view('welcome', compact('workshops'));
-
+        //$workshops = Workshop::orderBy('date', 'DESC')->get();
+        $individuals= Workshop::where('category', '=', 'Individual')->orderBy('date', 'DESC')->get();
+        // $groups= Workshop::where('category', '=', 'Grupal')->orderBy('date', 'DESC')->get();
+        //dd($groups);
+        return view('welcome', compact('individuals'));
     }
 
 

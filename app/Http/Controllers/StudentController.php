@@ -8,19 +8,26 @@ use App\Models\Workshop;
 
 class StudentController extends Controller
 {
-    public function ($id)
+    public function enroll(Request $request, $workshopId)
     {
-        $StudentEmail = auth()->id();
-        $user = Student::find($userId);
-        $userEvents = $user->events()->find($id);
-       
-        if($userEvents == null) {
-            $user->events()->attach($id);
-            $event = Workshop::find($id);
-            return view('suscribeResponse', ['message' => 'Ole tu!!! Inscrito!!!']);
-        }
+                //1- Crear un student nuevo 
+        //2- $Request de las cosas que se pasan por el formulario.       
+        $student=Student::create([
+        'name'=> $request->name,
+        'lastname'=> $request->lastname,
+        'date_born'=> $request->date_born,
+        'sex'=> $request->sex,
+        'email'=> $request->email,
+        'phone'=> $request->phone,
+        'city'=> $request->city,
+        'how_did_we_meet'=> $request->how_did_we_meet,]);        
+        
+        //3- attachean al $student al workshop.
+        $student->save();
+        
+        // $workshop=Workshop::find($workshopId);
+        // dd($workshop);
 
-        return view('suscribeResponse', [
-            'message' => 'Ups!! Algo salio mal pringao, ya estas inscrito!!!']);
+        return redirect('/');
     }
 }

@@ -18,47 +18,47 @@
                 <label for="title" class="my-2 form-label">
                     Título
                 </label>
-                <input class="form-control" name="title" id="title" placeholder="Introduzca un Título">
+                <input class="form-control" name="title" id="title" placeholder="Introduzca un Título" required>
             </div>
             <div class="w-auto md:w-96 lg:w-96 ">
                 <label for="category" class="my-2 form-label">
                     Categoría
                 </label>
                 <select name="category" id="category" class="form-control">
-                    <option>Individual</option>
-                    <option>Grupal</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Grupal">Grupal</option>
                 </select>
-                {{-- <input class="form-control" name="category" id="category" placeholder="Introduzca un categoría"> --}}
+                {{-- <input class="form-control" name="category" id="category" placeholder="Introduzca un categoría" required> --}}
             </div>
             <div>
                 <label for="description" class="my-2 form-label" >
                     ¿Qué haremos?
                 </label>
-                <textarea class="form-control" name="description" id="description" placeholder="Introduzca una Descripción"></textarea>
+                <textarea class="form-control" name="description" id="description" placeholder="Introduzca una Descripción" required></textarea>
             </div>
             <div>
                 <label for="date" class="my-2 form-label">
                     Fecha
                 </label>
-                <input type="dateTime-local" class="form-control" name="date" id="date" placeholder="Introduzca un Titulo">
+                <input type="dateTime-local" class="form-control" name="date" id="date" placeholder="Introduzca un Titulo" required>
             </div>
             <div>
                 <label for="technical_requirement" class="my-2 form-label">
                     Requsitos Técnicos
                 </label>
-                <input type="text" class="form-control" name="technical_requirement" id="technical_requirement" placeholder="Introduzca Requisitos Técnicos">
+                <input type="text" class="form-control" name="technical_requirement" id="technical_requirement" placeholder="Introduzca Requisitos Técnicos" required>
             </div>
             <div>
                 <label for="image" class="my-2 form-label">
                     URL imagen
                 </label>
-                <input type="url" class="form-control" name="image" id="image" placeholder="Introduzca URL de la Imagen">
+                <input type="url" class="form-control" name="image" id="image" placeholder="Introduzca URL de la Imagen" required>
             </div>
             <div>
                 <label for="platform_web" class="my-2 form-label">
                     Dirección / Enlace de la reunión
                 </label>
-                <input type="url" class="form-control" name="platform_web" id="url" placeholder="Introduzca URL de la Página">
+                <input type="url" class="form-control" name="platform_web" id="url" placeholder="Introduzca URL de la Página" required>
             </div>
 
             <div class="flex justify-between">

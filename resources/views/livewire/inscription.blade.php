@@ -4,85 +4,85 @@
 
                 <x-application-logo/>
 
-                <form class="flex flex-col text-left">
-
+                <form action="{{route('enroll')}}" method="POST" class="flex flex-col text-left">
+                @csrf
 
                 <div class="px-3 mb-6 md:mb-0">
-                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="nombre">
-                        Nombre*
+                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="name">
+                        Nombre *
                     </span>
-                    <input class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" type="text"   placeholder="Nombre">
+                    <input name="name" class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" type="text" placeholder="Nombre">
                 </div>
 
                 <div class="px-3 mb-6 md:mb-0">
-                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="apellido">
-                        Apellido*
+                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="lastname">
+                        Apellido *
                     </span>
-                    <input class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" type="text" placeholder="Apellido">
+                    <input name="lastname"class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" type="text" placeholder="Apellido">
                 </div>
 
                 <div class="px-3 mb-6 md:mb-0">
-                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="fecha de nacimiento">
-                        Fecha de Nacimiento*
+                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="date_born">
+                        Fecha de Nacimiento *
                     </span>
-                    <input type="date" class="w-full px-4 py-3 mb-3 bg-white rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" placeholder="día/mes/año">
+                    <input type="date" name="date_born" class="w-full px-4 py-3 mb-3 bg-white rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" placeholder="día/mes/año">
                 </div>
 
                 <div class="px-3 mb-6 md:mb-0">
-                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="genero">
+                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="sex">
                         Género
                     </span>
                     <div>
-                        <select class="w-full px-4 py-3 pr-8 mb-3 text-xs bg-white rounded border-vermilion-500 text-vermilion-500" id="type text-vermilion-500">
-                            <option>Selecciona...</option>
-                            <option>Femenino</option>
-                            <option>Masculino</option>
-                            <option>Otro</option>
-                            <option>Prefiero no decirlo</option>
+                        <select name="sex" class="w-full px-4 py-3 pr-8 mb-3 text-xs bg-white rounded border-vermilion-500 text-vermilion-500" id="type text-vermilion-500">
+                            <option disabled selected>Selecciona...</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Otro">Otro</option>
+                            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="px-3 mb-6 md:mb-0">
                     <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="email">
-                        eMail*
+                        e-mail *
                     </span>
-                    <input class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" wire:model="email" placeholder="📧">
+                    <input name="email" class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" wire:model="email" placeholder="📧">
                 </div>
 
                 <div class="px-3 mb-6 md:mb-0">
-                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="telefono">
-                        Teléfono*
+                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="phone">
+                        Teléfono *
                     </span>
-                    <input class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" type="tel" id="number" placeholder="☎️">
+                    <input name="phone" class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" type="tel" id="number" placeholder="☎️">
                 </div>
 
                 <div class="px-3 mb-6 md:mb-0">
-                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500">
-                        Ciudad*
+                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="city">
+                        Ciudad *
                     </span>
-                    <input class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" type="text" placeholder="Ciudad">
+                    <input name="city" class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" type="text" placeholder="Ciudad">
                 </div>
 
                 <div class="px-3 mb-6 md:mb-0">
-                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="cómo nos has conocido">
-                        Cómo nos has conocido?*
+                    <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="how_did_we_meet">
+                        ¿Cómo nos has conocido? *
                     </span>
                     <div>
-                        <select class="w-full px-4 py-3 pr-8 mb-3 text-xs bg-white rounded border-vermilion-500 text-vermilion-500" id="type text-vermilion-500">
-                            <option>Selecciona...</option>
-                            <option>Entidad, fundación o programa social</option>
-                            <option>Redes Sociales</option>
-                            <option>Web de Factoría F5</option>
-                            <option>Amig@s</option>
-                            <option>Otros</option>
+                        <select name="how_did_we_meet" class="w-full px-4 py-3 pr-8 mb-3 text-xs bg-white rounded border-vermilion-500 text-vermilion-500" id="type text-vermilion-500">
+                            <option disabled selected>Selecciona...</option>
+                            <option value="Entidad, fundación o programa social">Entidad, fundación o programa social</option>
+                            <option value="Redes Sociales">Redes Sociales</option>
+                            <option value="Web de Factoría F5">Web de Factoría F5</option>
+                            <option value="Amig@s">Amig@s</option>
+                            <option value="Otros">Otros</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="px-3 mb-6 md:mb-0">
                     <span class="text-xs text-vermilion-500 ">
-                            * Este campo es obligatorio.
+                            * Estos campos son obligatorios.
                     </span>
                 </div>
 

@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkshopController;
+use App\Models\Student;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +26,6 @@ Route::resource('/dashboard', WorkshopController::class);
 
 
 Route::get('/', [WelcomeController::class, 'index']);
+
+Route::post('/enrolls/{workshopId}', [StudentController::class, 'enroll'])->name('enroll');
 

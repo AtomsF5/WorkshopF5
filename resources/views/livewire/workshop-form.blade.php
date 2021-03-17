@@ -8,9 +8,9 @@
             Crear Taller
         </button>
 
-    <x-modal 
+    <x-modal
         trigger="showModal"
-        
+
         >
         <form action="{{ url('/dashboard') }}" method="POST" >
             @csrf

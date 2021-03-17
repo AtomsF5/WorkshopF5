@@ -1,58 +1,53 @@
-<div>
-    <div class="w-auto md:w-96 lg:w-96 ">
-        <label for="title" class="form-label my-2" for="title">
+<div class="flex flex-col w-5/6 pt-20 mx-auto justify-items-center">
+
+        <h1 class="p-10 text-3xl font-extrabold text-center font-poppins text-vermilion-500">Formulario para editar el taller: </br> {{$workshop->title}}</h1>
+
+        <label for="title" class="my-2 form-label" for="title">
             Título
         </label>
         <input class="form-control" value="{{$workshop->title}}" name="title" id="title" placeholder="Ingrese un Titulo">
-    </div>
-    <div class="w-auto md:w-96 lg:w-96 ">
-        <label for="category" class="form-label my-2" for="category">
+
+
+        <label for="category" class="my-2 form-label" for="category">
             Categoría
         </label>
-        <input class="form-control"  value="{{$workshop->category}}" name="category" id="category" placeholder="Ingrese un Categoria">
-    </div>
-    <div>
-        <label for="description" class="form-label my-2" for="description">
+        <select name="category" id="category" class="form-control" value="category">
+            <option>Individual</option>
+            <option>Grupal</option>
+        </select>
+
+
+        <label for="description" class="my-2 form-label" for="description">
             Descripción
         </label>
         <textarea class="form-control"  name="description" id="description" placeholder="Ingrese una Description">{{$workshop->description}}</textarea>
-    </div>
-    <div>
-        <label for="date" class="form-label my-2" for="date">
+
+
+        <label for="date" class="my-2 form-label" for="date">
             Fecha:
             {{$workshop->date}}
         </label>
         <input type="dateTime-local" class="form-control"  name="date" id="date" placeholder="Ingrese un fecha">
-    </div>
-    <div>
-        <label for="image" class="form-label my-2" for="image">
+
+
+        <label for="image" class="my-2 form-label" for="image">
             URL imagen
         </label>
         <input type="url" class="form-control" value="{{$workshop->image}}"  name="image" id="image" placeholder="URL imagen">
-    </div>
-    <div>
-        <label for="platform_web" class="form-label my-2" for="date">
+
+
+        <label for="platform_web" class="my-2 form-label" for="date">
             URL Página
         </label>
-        <input type="url" class="form-control" value="{{$workshop->platform_web}}"  name="platform_web" id="url" placeholder="URL Pagina">
-    </div>
-    {{-- <div>
-        <label for="status" class="form-label my-2" for="status">
-            Estado
-        </label>
-        <select name="status" class="form-control" name="status" id="status">
-            <option>
-                Activo
-            </option>
-            <option>
-                Desactivado
-            </option>
-        </select>
-    </div> --}}
-    <div class="flex justify-between">
-        <button class="bg-red-500 hover:bg-red-700 border-red-700 hover:text-white p-2 my-2 rounded">Cancelar</button>
-        <input type="submit" value="Guardar" class="bg-green-500 hover:bg-green-700 border-green-700 hover:text-white p-2 my-2 rounded">
-    </div>
+        <input type="url" class="mb-5 form-control" value="{{$workshop->platform_web}}"  name="platform_web" id="url" placeholder="URL Pagina">
+
+
+
+        {{-- <button class="p-2 my-2 bg-red-500 border-red-700 rounded hover:bg-red-700 hover:text-white">Cancelar</button> --}}
+        <div class="flex justify-center">
+            <input type="submit" value="Guardar" class="items-center p-2 py-2 font-semibold text-white rounded font-poppins bg-vermilion-500 border-vermilion-700 hover:bg-vermilion-700 hover:text-white">
+        </div>
+
 </div>
 
 
@@ -60,19 +55,3 @@
 
 
 
-
-{{-- <div class="w-full">
-    <div class="flex items-center justify-center">
-        <button  class="modal-button transition mt-4 block p-3 mx-auto bg-vermilion-500 text-alabaster-500 rounded w-40 text-center"> Crear Taller </button>
-    </div>
-    <div class="modal delay-25 opacity-0 pointer-events-none absolute w-full h-full top-0 left-0 flex items-center justify-center">
-        <div class="modal-overlay absolute w-full h-full bg-black opacity-25 top-0 left-0 cursor-pointer">
-        </div>
-        <div class="absolute shadow-lg flex items-center justify-center ">
-            <div class="bg-white rounded-lg shadow overflow-hidden  mx-auto p-4">
-                <form action="{{ url('/dashboard') }}" method="post">
-                    @csrf
-            </form>
-        </div>
-    </div>
-</div> --}}

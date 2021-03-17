@@ -11,14 +11,25 @@ class Student extends Model
 
     protected $fillable = [
         'name',
-        'lastname',
+        'last_name',
         'date_born',
-        'sex',
+        'gender',
         'email',
         'phone',
         'city',
-        'how_did_we_meet'
+        'how_did_you_get_to_know_us'
     ];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'email_verified_at' => 'datatime',
+    ];
+
+
 
     public function workshops() {
 

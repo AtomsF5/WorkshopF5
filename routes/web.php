@@ -1,11 +1,8 @@
 <?php
 
-
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkshopController;
-use App\Http\Controllers\WelcomeController;
-
-
 
 /*
 |--------------------------------------------------------------------------
@@ -18,15 +15,16 @@ use App\Http\Controllers\WelcomeController;
 |
 */
 
+//no se encuentra en la developmment
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', [WelcomeController::class, 'index']);
 // Route::get('/individualCategory', [WelcomeController::class, 'individuals'])->name('pastevents');
 
+
 Route::resource('/dashboard', WorkshopController::class);
-
-Route::resource('/', WelcomeController::class);
-
 
 // Rutas proyecto Events
 // Route::get('/', [IndexController::class, 'index'])->name('index');

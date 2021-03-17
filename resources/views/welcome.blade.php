@@ -1,7 +1,5 @@
 @include('layout.header')
 
-
-        <x-slider :workshops="$workshops"/>
-        
+    <livewire:landing-page :workshops="$workshops"></livewire:landing-page>
 
 @include('layout.footer')

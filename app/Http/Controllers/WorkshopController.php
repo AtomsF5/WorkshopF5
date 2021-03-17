@@ -17,7 +17,7 @@ class WorkshopController extends Controller
         $workshops = Workshop::orderBy('date', 'desc')
         ->get();
 
-        return view('dasboard.index', $workshops);
+        return view('dashboard.index', compact('workshops'));
     }
 
     /**

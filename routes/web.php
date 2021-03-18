@@ -3,6 +3,7 @@
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkshopController;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------

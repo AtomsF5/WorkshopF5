@@ -10,37 +10,40 @@ use Livewire\Component;
 class LandingPage extends Component
 {
     public $workshops;
+    public $individuals;
+    public $groups;
 
     public $name;
-    public $last_name;
+    public $lastname;
     public $date_born;
-    public $gender;
+    public $sex;
     public $email;
     public $phone;
     public $city;
-    public $how_did_you_get_to_know_us;
+    public $how_did_we_meet
+;
 
     protected $rules = [
         'name' => 'required',
-        'last_name' => 'required',
+        'lastname' => 'required',
         'date_born' => 'required',
-        'gender' => 'required',
+        'sex' => 'required',
         'email' => 'required|email:filter|unique:students,email',
         'phone' => 'required',
         'city' => 'required',
-        'how_did_you_get_to_know_us' => 'required',
+        'how_did_we_meet' => 'required',
     ];
 
     protected $messages = [
         'name.required'=> 'Campo requerido.',
-        'last_name.required'=> 'Campo requerido.',
+        'lastname.required'=> 'Campo requerido.',
         'date_born.required'=> 'Campo requerido.',
-        'gender.required'=> 'Debes seleccionar una opción.',
+        'sex.required'=> 'Debes seleccionar una opción.',
         'email.required'=> 'Campo requerido.',
         'email.unique'=> 'El correo ya se encuentra registrado.',
         'phone.required'=> 'Campo requerido.',
         'city.required'=> 'Campo requerido.',
-        'how_did_you_get_to_know_us.required'=> 'Debes seleccionar una opción.',
+        'how_did_we_meet.required'=> 'Debes seleccionar una opción.',
     ];
 
 
@@ -51,24 +54,30 @@ class LandingPage extends Component
 
         Student::create([
             'name' => $this->name,
-            'last_name' => $this->last_name,
+            'lastname
+' => $this->lastname
+,
             'date_born' => $this->date_born,
-            'gender' => $this->gender,
+            'sex' => $this->sex,
             'email' => $this->email,
             'phone' => $this->phone,
             'city' => $this->city,
-            'how_did_you_get_to_know_us' => $this->how_did_you_get_to_know_us,
+            'how_did_we_meet
+' => $this->how_did_we_meet
+,
             ]);
 
             $this->reset([
                 'name',
-                'last_name',
+                'lastname
+',
                 'date_born',
-                'gender',
+                'sex',
                 'email',
                 'phone',
                 'city',
-                'how_did_you_get_to_know_us'
+                'how_did_we_meet
+'
                 ]);
 
 

@@ -1,0 +1,129 @@
+.grupalContainerSlider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height:auto;
+    background-color:#F2F2F2;
+    border-radius: 10px;
+}
+
+.grupalCard {
+    
+    width:650px;
+    height: auto;
+    margin:20px;
+    padding: 15px;
+    /* display: flex; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-color:#ff4701;
+    border-width: 3px;
+    border-style: double; */
+    border-radius: 15px;
+    background-color: white;
+    
+
+}
+
+  .grupalCard button {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #ff4701;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+  .grupalCard button:hover {
+    opacity: 0.5;
+}
+
+  .picture {
+    height: auto; 
+    border-radius: 15px;
+
+}
+
+.grupalCard h1{
+  font-size: 22px;
+  font-weight: bold;
+  
+  
+
+}
+
+.grupalCard p{
+  font-size: 16px;
+  
+  
+}
+
+
+
+  @media only screen and (max-width: 1415px) {
+    
+    .grupalCard h1{
+      font-size: 20px;
+    }
+    
+    .grupalCard p{
+      font-size: 14px;
+    }
+    .grupalCard button{
+      font-size: 14px;
+      padding: 10px;
+    }
+
+} 
+
+  @media only screen and (max-width: 1290px) {
+    
+    .grupalCard h1{
+      font-size: 18px;
+    }
+    
+    .grupalCard p{
+      font-size: 12px;
+    }
+    .gurpalCard button{
+      font-size: 12px;
+      padding: 10px;
+    }
+    
+}
+    @media only screen and (max-width: 1140px) {
+      
+      .gurpalCard h1{
+        font-size: 16px;
+      }
+      
+      .grupalCard p{
+        font-size: 12px;
+        
+      }
+      .gurpalCard button{
+        font-size: 11px;
+        padding: 9px;
+      }
+    }
+
+      @media only screen and (max-width: 815px) {
+
+        .grupalCard h1{
+          font-size: 13px;
+        }
+        
+        .grupalCard p{
+          font-size: 10px;
+        }
+        .grupalCard button{
+          font-size: 10px;
+          padding: 8px;
+        }
+        
+      }

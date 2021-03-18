@@ -1,4 +1,5 @@
-@props(['trigger'])
+@props(['trigger', 'workshop'])
+
 
 <div
     class="fixed top-0 flex items-center w-full h-full bg-gray-900 bg-opacity-60"

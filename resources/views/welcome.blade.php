@@ -20,6 +20,7 @@
             <div class="flex flex-col justify-between card">
                 <img class="picture" src="{{ asset('images/html-y-php-articulo.jpg') }}" alt= "imagen del taller">
                 <h1>{{$workshop->title}}</h1>
+                <p>{{$workshop->id}}</p>
                 <p><strong>Qué haremos:</strong> {{$workshop->description}}</p>
                 <p><strong>Tipo de taller:</strong> {{$workshop->category}}</p>                
                 <p><strong>Fecha y Hora:</strong> {{$workshop->date}}</p>
@@ -67,8 +68,16 @@
             @endforeach
         </div>
 
-        <x-modal trigger="showModal">
 
+
+
+
+
+
+<!-- Modal -->
+
+        <x-modal trigger="showModal">
+        
         <form id="inscribeme" action="{{route('enroll', $workshopId)}}" method="POST" class="flex flex-col text-left">
                 @csrf
 
@@ -78,6 +87,8 @@
                     </span>
                     <input name="name" class="w-full px-4 py-3 mb-3 bg-white border rounded text-vermilion-500 border-vermilion-500 placeholder-vermilion-500" type="text" placeholder="Nombre" required>
                 </div>
+
+                <p>{{$workshop->id}}</p>
 
                 <div class="px-3 mb-6 md:mb-0">
                     <span class="mb-2 text-xs font-bold tracking-wide uppercase text-vermilion-500" for="lastname">

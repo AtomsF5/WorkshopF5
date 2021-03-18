@@ -25,8 +25,8 @@ class StudentController extends Controller
         //3- attachean al $student al workshop.
         $student->save();
         
-        // $workshop=Workshop::find($workshopId);
-        // dd($workshop);
+        $workshop=Workshop::find($workshopId);
+        dd($workshop);
 
         return redirect('/');
     }

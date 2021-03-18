@@ -16,7 +16,7 @@ class CreateWorkshopsTable extends Migration
         Schema::create('workshops', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('category');
+            $table->enum('category', ['grupal', 'individual']);
             $table->text('description');
             $table->dateTime('date');
             $table->text('technical_requirement');

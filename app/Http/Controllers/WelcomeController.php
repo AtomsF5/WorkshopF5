@@ -14,10 +14,10 @@ class WelcomeController extends Controller
     public function index()
     {
         $workshops = Workshop::orderBy('date', 'DESC')->get();
-        //$individuals= Workshop::where('category', '=', 'Individual')->orderBy('date', 'DESC')->get();
-        //$groups= Workshop::where('category', '=', 'Grupal')->orderBy('date', 'DESC')->get();
+        $individuals= Workshop::where('category', '=', 'Individual')->orderBy('date', 'DESC')->get();
+        $groups= Workshop::where('category', '=', 'Grupal')->orderBy('date', 'DESC')->get();
         //dd($groups);
-        return view('welcome', compact('workshops'));
+        return view('welcome', compact('groups','individuals'));
     }
 
 }

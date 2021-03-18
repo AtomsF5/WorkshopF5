@@ -20,5 +20,6 @@ Route::get('/', [WelcomeController::class, 'index']);
 
 Route::resource('/dashboard', WorkshopController::class);
 
+Route::post('/enrolls/{workshopId}', [StudentController::class, 'enroll'])->name('enroll');
 
 
